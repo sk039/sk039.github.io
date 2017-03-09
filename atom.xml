@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Denis&#39;s Blog</title>
+  
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="http://yoursite.com/"/>
+  <updated>2017-03-09T14:36:45.955Z</updated>
+  <id>http://yoursite.com/</id>
+  
+  <author>
+    <name>Denis Sccot</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>Linux远程桌面-x11vnc</title>
+    <link href="http://yoursite.com/2017/03/09/Linux%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2-x11vnc/"/>
+    <id>http://yoursite.com/2017/03/09/Linux远程桌面-x11vnc/</id>
+    <published>2017-03-09T13:43:53.000Z</published>
+    <updated>2017-03-09T14:36:45.955Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>x11vnc类似QQ远程控制，显示的图像是经过硬件加速的。</p>
+</blockquote>
+<h2 id="x11vnc安装"><a href="#x11vnc安装" class="headerlink" title="x11vnc安装"></a>x11vnc安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo apt install x11vnc</div></pre></td></tr></table></figure>
+<h2 id="x11vnc密码设置"><a href="#x11vnc密码设置" class="headerlink" title="x11vnc密码设置"></a>x11vnc密码设置</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ x11vnc -storepasswd</div></pre></td></tr></table></figure>
+<h2 id="x11vnc启动"><a href="#x11vnc启动" class="headerlink" title="x11vnc启动"></a>x11vnc启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x11vnc -rfbport 5903 -rfbauth ~/.vnc/passwd  -display :0 -forever -bg -repeat -nowf -o ~/.vnc/x11vnc.log</div></pre></td></tr></table></figure>
+<p>其它参数：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">--localhost    在本地地址监听</div><div class="line">-autoport PORT 从PORT开始选择可用端口监听</div><div class="line">-rfbport  PORT 指定监听端口</div></pre></td></tr></table></figure></p>
+<p>验证是否启动成功<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ ps aux | grep x11vnc</div><div class="line">odroid    1979  1.4  0.4  29960  8700 ?        Ss   03:41   0:01 x11vnc -rfbauth /home/odroid/.vnc/passwd -display :0 -forever -bg -repeat -nowf -o /home/odroid/.vnc/x11vnc.log</div></pre></td></tr></table></figure></p>
+<h2 id="设置自动登录"><a href="#设置自动登录" class="headerlink" title="设置自动登录"></a>设置自动登录</h2><h3 id="MATE桌面"><a href="#MATE桌面" class="headerlink" title="MATE桌面"></a>MATE桌面</h3><p>修改/usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf</p>
+<pre><code class="Bash">[SeatDefaults]
+greeter-session=lightdm-gtk-greeter
+autologin-user=sk
+</code></pre>
+<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
+<li><a href="https://help.ubuntu.com/community/VNC/Servers" target="_blank" rel="external">https://help.ubuntu.com/community/VNC/Servers</a></li>
+<li><a href="http://www.karlrunge.com/x11vnc/" target="_blank" rel="external">http://www.karlrunge.com/x11vnc/</a></li>
+</ol>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;x11vnc类似QQ远程控制，显示的图像是经过硬件加速的。&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;h2 id=&quot;x11vnc安装&quot;&gt;&lt;a href=&quot;#x11vnc安装&quot; class=&quot;headerlink&quot; title=&quot;x11vnc安装&quot;&gt;&lt;/
+    
+    </summary>
+    
+      <category term="Linux" scheme="http://yoursite.com/categories/Linux/"/>
+    
+    
+      <category term="Linux" scheme="http://yoursite.com/tags/Linux/"/>
+    
+      <category term="vnc" scheme="http://yoursite.com/tags/vnc/"/>
+    
+      <category term="x11vnc" scheme="http://yoursite.com/tags/x11vnc/"/>
+    
+  </entry>
+  
+</feed>

@@ -71,7 +71,7 @@
 <link href="/css/main.css?v=5.1.0" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="linux,gecko,firefox,调试," />
 
 
 
@@ -89,12 +89,28 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Denis's Blog">
-<meta property="og:url" content="https://sk039.github.io/index.html">
+<meta name="description" content="原文链接：Gecko_Logging
+Gecko核心代码提供了一个基础的C++日志记录框架。所有构建 (Debug、Release)默认开启，线程安全，是NSPR日志记录的首选。
+
+日志记录框架声明日志模块LazyLogModule以线程安全的方式推迟创建后台LogModule，并且是声明日志模块的首选方法。
+123#include &quot;mozilla/Logging.h&quot;static mozill">
+<meta property="og:type" content="article">
+<meta property="og:title" content="[翻译] Gecko日志记录">
+<meta property="og:url" content="https://sk039.github.io/2017/03/10/翻译-Gecko日志记录/index.html">
 <meta property="og:site_name" content="Denis's Blog">
+<meta property="og:description" content="原文链接：Gecko_Logging
+Gecko核心代码提供了一个基础的C++日志记录框架。所有构建 (Debug、Release)默认开启，线程安全，是NSPR日志记录的首选。
+
+日志记录框架声明日志模块LazyLogModule以线程安全的方式推迟创建后台LogModule，并且是声明日志模块的首选方法。
+123#include &quot;mozilla/Logging.h&quot;static mozill">
+<meta property="og:updated_time" content="2017-03-10T03:30:01.265Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Denis's Blog">
+<meta name="twitter:title" content="[翻译] Gecko日志记录">
+<meta name="twitter:description" content="原文链接：Gecko_Logging
+Gecko核心代码提供了一个基础的C++日志记录框架。所有构建 (Debug、Release)默认开启，线程安全，是NSPR日志记录的首选。
+
+日志记录框架声明日志模块LazyLogModule以线程安全的方式推迟创建后台LogModule，并且是声明日志模块的首选方法。
+123#include &quot;mozilla/Logging.h&quot;static mozill">
 
 
 
@@ -122,13 +138,13 @@
 
 
 
-  <link rel="canonical" href="https://sk039.github.io/"/>
+  <link rel="canonical" href="https://sk039.github.io/2017/03/10/翻译-Gecko日志记录/"/>
 
 
 
 
 
-  <title> Denis's Blog </title>
+  <title> [翻译] Gecko日志记录 | Denis's Blog </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="zh-Hans">
@@ -159,9 +175,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left 
-   page-home 
- ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -288,9 +302,9 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
+
+  <div id="posts" class="posts-expand">
     
-      
 
   
 
@@ -320,10 +334,7 @@
             
             
               
-                
-                <a class="post-title-link" href="/2017/03/10/翻译-Gecko日志记录/" itemprop="url">
-                  [翻译] Gecko日志记录
-                </a>
+                [翻译] Gecko日志记录
               
             
           </h1>
@@ -417,9 +428,7 @@
       
 
       
-        
-          
-            <h2 id="原文链接：Gecko-Logging"><a href="#原文链接：Gecko-Logging" class="headerlink" title="原文链接：Gecko_Logging"></a>原文链接：<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Gecko_Logging" target="_blank" rel="external">Gecko_Logging</a></h2><blockquote>
+        <h2 id="原文链接：Gecko-Logging"><a href="#原文链接：Gecko-Logging" class="headerlink" title="原文链接：Gecko_Logging"></a>原文链接：<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Gecko_Logging" target="_blank" rel="external">Gecko_Logging</a></h2><blockquote>
 <p>Gecko核心代码提供了一个基础的C++日志记录框架。所有构建 (Debug、Release)默认开启，线程安全，是NSPR日志记录的首选。</p>
 </blockquote>
 <h2 id="日志记录框架"><a href="#日志记录框架" class="headerlink" title="日志记录框架"></a>日志记录框架</h2><h3 id="声明日志模块"><a href="#声明日志模块" class="headerlink" title="声明日志模块"></a>声明日志模块</h3><p>LazyLogModule以线程安全的方式推迟创建后台LogModule，并且是声明日志模块的首选方法。</p>
@@ -488,216 +497,91 @@
 <p>上述转储和附加选项仅适用于记录到文件。</p>
 <h2 id="E10S注意"><a href="#E10S注意" class="headerlink" title="E10S注意"></a>E10S注意</h2><p>当content进程在沙盒中时，它不能写入stderr或任何文件。可能需要将首选项security.sandbox.content.level设置为0才能查看日志。</p>
 
-          
+      
+    </div>
+
+    <div>
+      
         
+
       
     </div>
 
     <div>
       
-    </div>
+        
 
-    <div>
       
     </div>
 
 
     <footer class="post-footer">
       
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
-    <link itemprop="mainEntityOfPage" href="https://sk039.github.io/2017/03/09/Linux远程桌面-x11vnc/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="Denis Sccot">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Denis's Blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-            
-            
-              
-                
-                <a class="post-title-link" href="/2017/03/09/Linux远程桌面-x11vnc/" itemprop="url">
-                  Linux远程桌面-x11vnc
-                </a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-09T21:43:53+08:00">
-                2017-03-09
-              </time>
-            
-
-            
-
-            
-          </span>
-
+        <div class="post-tags">
           
-            <span class="post-category" >
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/linux/" itemprop="url" rel="index">
-                    <span itemprop="name">linux</span>
-                  </a>
-                </span>
-
-                
-                
-              
-            </span>
+            <a href="/tags/linux/" rel="tag"># linux</a>
           
-
+            <a href="/tags/gecko/" rel="tag"># gecko</a>
           
-            
-              <span class="post-comments-count">
-                <span class="post-meta-divider">|</span>
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-comment-o"></i>
-                </span>
-                <a href="/2017/03/09/Linux远程桌面-x11vnc/#comments" itemprop="discussionUrl">
-                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/09/Linux远程桌面-x11vnc/" itemprop="commentCount"></span>
-                </a>
-              </span>
-            
+            <a href="/tags/firefox/" rel="tag"># firefox</a>
           
-
+            <a href="/tags/调试/" rel="tag"># 调试</a>
           
-          
-             <span id="/2017/03/09/Linux远程桌面-x11vnc/" class="leancloud_visitors" data-flag-title="Linux远程桌面-x11vnc">
-               <span class="post-meta-divider">|</span>
-               <span class="post-meta-item-icon">
-                 <i class="fa fa-eye"></i>
-               </span>
-               
-                 <span class="post-meta-item-text">阅读次数 </span>
-               
-                 <span class="leancloud-visitors-count"></span>
-             </span>
-          
-
-          
-
-          
-
-          
-
         </div>
-      </header>
-    
-
-
-    <div class="post-body" itemprop="articleBody">
-
-      
       
 
       
         
-          
-            <blockquote>
-<p>x11vnc类似QQ远程控制，显示的图像是经过硬件加速的。</p>
-</blockquote>
-<h2 id="x11vnc安装"><a href="#x11vnc安装" class="headerlink" title="x11vnc安装"></a>x11vnc安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo apt install x11vnc</div></pre></td></tr></table></figure>
-<h2 id="x11vnc密码设置"><a href="#x11vnc密码设置" class="headerlink" title="x11vnc密码设置"></a>x11vnc密码设置</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ x11vnc -storepasswd</div></pre></td></tr></table></figure>
-<h2 id="x11vnc启动"><a href="#x11vnc启动" class="headerlink" title="x11vnc启动"></a>x11vnc启动</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">x11vnc -rfbport 5903 -rfbauth ~/.vnc/passwd  -display :0 -forever -bg -repeat -nowf -o ~/.vnc/x11vnc.log</div></pre></td></tr></table></figure>
-<p>其它参数：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line">--localhost    在本地地址监听</div><div class="line">-autoport PORT 从PORT开始选择可用端口监听</div><div class="line">-rfbport  PORT 指定监听端口</div></pre></td></tr></table></figure></p>
-<p>验证是否启动成功<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div></pre></td><td class="code"><pre><div class="line">$ ps aux | grep x11vnc</div><div class="line">odroid    1979  1.4  0.4  29960  8700 ?        Ss   03:41   0:01 x11vnc -rfbauth /home/odroid/.vnc/passwd -display :0 -forever -bg -repeat -nowf -o /home/odroid/.vnc/x11vnc.log</div></pre></td></tr></table></figure></p>
-<h2 id="设置自动登录"><a href="#设置自动登录" class="headerlink" title="设置自动登录"></a>设置自动登录</h2><h3 id="MATE桌面"><a href="#MATE桌面" class="headerlink" title="MATE桌面"></a>MATE桌面</h3><p>修改/usr/share/lightdm/lightdm.conf.d/60-lightdm-gtk-greeter.conf</p>
-<pre><code class="Bash">[SeatDefaults]
-greeter-session=lightdm-gtk-greeter
-autologin-user=sk
-</code></pre>
-<h2 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h2><ol>
-<li><a href="https://help.ubuntu.com/community/VNC/Servers" target="_blank" rel="external">https://help.ubuntu.com/community/VNC/Servers</a></li>
-<li><a href="http://www.karlrunge.com/x11vnc/" target="_blank" rel="external">http://www.karlrunge.com/x11vnc/</a></li>
-</ol>
-
-          
-        
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-    <div>
-      
-    </div>
-
-
-    <footer class="post-footer">
       
 
       
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2017/03/09/Linux远程桌面-x11vnc/" rel="next" title="Linux远程桌面-x11vnc">
+                <i class="fa fa-chevron-left"></i> Linux远程桌面-x11vnc
+              </a>
+            
+          </div>
+
+          <span class="post-nav-divider"></span>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
 
       
-
-      
-      
-        <div class="post-eof"></div>
       
     </footer>
   </article>
 
 
-    
-  </section>
 
-  
+    <div class="post-spread">
+      
+        <div class="ds-share flat" data-thread-key="2017/03/10/翻译-Gecko日志记录/"
+     data-title="[翻译] Gecko日志记录"
+     data-content=""
+     data-url="https://sk039.github.io/2017/03/10/翻译-Gecko日志记录/">
+  <div class="ds-share-inline">
+    <ul  class="ds-share-icons-16">
+
+      <li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+      <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+      <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+      <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+      <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+
+    </ul>
+    <div class="ds-share-icons-more">
+    </div>
+  </div>
+</div>
+      
+    </div>
+  </div>
 
           
           </div>
@@ -705,6 +589,14 @@ autologin-user=sk
 
 
           
+  <div class="comments" id="comments">
+    
+      <div class="ds-thread" data-thread-key="2017/03/10/翻译-Gecko日志记录/"
+           data-title="[翻译] Gecko日志记录" data-url="https://sk039.github.io/2017/03/10/翻译-Gecko日志记录/">
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -724,8 +616,17 @@ autologin-user=sk
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel sidebar-panel-active">
+      <section class="site-overview sidebar-panel">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="/images/avatar.gif"
@@ -794,6 +695,22 @@ autologin-user=sk
 
       </section>
 
+      
+      <!--noindex-->
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+              
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#原文链接：Gecko-Logging"><span class="nav-text">原文链接：Gecko_Logging</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#日志记录框架"><span class="nav-text">日志记录框架</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#声明日志模块"><span class="nav-text">声明日志模块</span></a><ol class="nav-child"><li class="nav-item nav-level-4"><a class="nav-link" href="#Mozilla日志记录宏"><span class="nav-text">Mozilla日志记录宏</span></a><ol class="nav-child"><li class="nav-item nav-level-5"><a class="nav-link" href="#MOZ-LOG-module-level-message"><span class="nav-text">MOZ_LOG(module, level, message)</span></a></li><li class="nav-item nav-level-5"><a class="nav-link" href="#MOZ-LOG-TEST-module-level"><span class="nav-text">MOZ_LOG_TEST(module, level)</span></a></li></ol></li><li class="nav-item nav-level-4"><a class="nav-link" href="#Mozilla日志级别"><span class="nav-text">Mozilla日志级别</span></a></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#日志记录接口"><span class="nav-text">日志记录接口</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用示例"><span class="nav-text">使用示例</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#示例代码"><span class="nav-text">示例代码</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#开启日志输出"><span class="nav-text">开启日志输出</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#重定向日志到文件"><span class="nav-text">重定向日志到文件</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#E10S注意"><span class="nav-text">E10S注意</span></a></li></ol></div>
+            
+
+          </div>
+        </section>
+      <!--/noindex-->
       
 
       
@@ -906,6 +823,10 @@ autologin-user=sk
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.1.0"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.1.0"></script>
+
+
 
   
 

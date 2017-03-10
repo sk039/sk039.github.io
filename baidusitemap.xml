@@ -3,29 +3,55 @@
 
 
     
-    
-    
   <url>
-    <loc>https://sk039.github.io/2017/03/09/Linux%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2-x11vnc/</loc>
-    <lastmod>2017-03-09T14:36:45.000Z</lastmod>
+    <loc>https://sk039.github.io/2017/03/10/%E7%BF%BB%E8%AF%91-Gecko%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2017-03-10T03:30:01.265Z</lastmod>
     <data>
         <display>
-        <title>Linux远程桌面-x11vnc</title>
-        <pubTime>2017-03-09T13:43:53.000Z</pubTime>
+        <title>[翻译] Gecko日志记录</title>
+        <pubTime>2017-03-10T03:25:14.000Z</pubTime>
         
-        <tag>Linux</tag>
+        <tag>linux</tag>
          
-        <tag>vnc</tag>
+        <tag>gecko</tag>
          
-        <tag>x11vnc</tag>
+        <tag>firefox</tag>
+         
+        <tag>调试</tag>
          
          
            
              
-              <breadCrumb title="Linux" url="https://sk039.github.io/categories/Linux/"/>
+              <breadCrumb title="firefox" url="https://sk039.github.io/categories/firefox/"/>
           
         </display>
     </data>
     </url>
 
+    
+  <url>
+    <loc>https://sk039.github.io/2017/03/09/Linux%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2-x11vnc/</loc>
+    <lastmod>2017-03-10T03:30:00.061Z</lastmod>
+    <data>
+        <display>
+        <title>Linux远程桌面-x11vnc</title>
+        <pubTime>2017-03-09T13:43:53.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>vnc</tag>
+         
+        <tag>xvnc</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://sk039.github.io/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+    
 </urlset>

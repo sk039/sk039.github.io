@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sk039.github.io/"/>
-  <updated>2017-03-09T14:36:45.000Z</updated>
+  <updated>2017-03-10T03:30:01.265Z</updated>
   <id>https://sk039.github.io/</id>
   
   <author>
@@ -16,11 +16,107 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>[翻译] Gecko日志记录</title>
+    <link href="https://sk039.github.io/2017/03/10/%E7%BF%BB%E8%AF%91-Gecko%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/"/>
+    <id>https://sk039.github.io/2017/03/10/翻译-Gecko日志记录/</id>
+    <published>2017-03-10T03:25:14.000Z</published>
+    <updated>2017-03-10T03:30:01.265Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="原文链接：Gecko-Logging"><a href="#原文链接：Gecko-Logging" class="headerlink" title="原文链接：Gecko_Logging"></a>原文链接：<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Gecko_Logging" target="_blank" rel="external">Gecko_Logging</a></h2><blockquote>
+<p>Gecko核心代码提供了一个基础的C++日志记录框架。所有构建 (Debug、Release)默认开启，线程安全，是NSPR日志记录的首选。</p>
+</blockquote>
+<h2 id="日志记录框架"><a href="#日志记录框架" class="headerlink" title="日志记录框架"></a>日志记录框架</h2><h3 id="声明日志模块"><a href="#声明日志模块" class="headerlink" title="声明日志模块"></a>声明日志模块</h3><p>LazyLogModule以线程安全的方式推迟创建后台LogModule，并且是声明日志模块的首选方法。</p>
+<figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"mozilla/Logging.h"</span></span></div><div class="line"></div><div class="line"><span class="keyword">static</span> mozilla::<span class="function">LazyLogModule <span class="title">sFooLog</span><span class="params">(<span class="string">"foo"</span>)</span></span>;</div></pre></td></tr></table></figure>
+<p>提供了2个宏和1个枚举类做为基本接口</p>
+<h4 id="Mozilla日志记录宏"><a href="#Mozilla日志记录宏" class="headerlink" title="Mozilla日志记录宏"></a>Mozilla日志记录宏</h4><h5 id="MOZ-LOG-module-level-message"><a href="#MOZ-LOG-module-level-message" class="headerlink" title="MOZ_LOG(module, level, message)"></a>MOZ_LOG(module, level, message)</h5><p>输出指定信息，如果模块日志级别允许。</p>
+<ul>
+<li>module - 要使用的日志模块</li>
+<li>level - 消息的日志输出级别</li>
+<li>message - 要输出的printf样式消息。必须括在括号中</li>
+</ul>
+<h5 id="MOZ-LOG-TEST-module-level"><a href="#MOZ-LOG-TEST-module-level" class="headerlink" title="MOZ_LOG_TEST(module, level)"></a>MOZ_LOG_TEST(module, level)</h5><p>检查模块是否开启相应的日志输出级别。</p>
+<ul>
+<li>module - 要使用的日志模块</li>
+<li>level - 日志输出级别</li>
+</ul>
+<h4 id="Mozilla日志级别"><a href="#Mozilla日志级别" class="headerlink" title="Mozilla日志级别"></a>Mozilla日志级别</h4><table>
+<thead>
+<tr>
+<th style="text-align:left">日志级别</th>
+<th style="text-align:right">数值</th>
+<th style="text-align:left">作用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">Disabled</td>
+<td style="text-align:right">0</td>
+<td style="text-align:left">表示日志记录已禁用。这不应该直接在代码中使用。</td>
+</tr>
+<tr>
+<td style="text-align:left">Error</td>
+<td style="text-align:right">1</td>
+<td style="text-align:left">发生错误，通常你会考虑在调试生成中断言。</td>
+</tr>
+<tr>
+<td style="text-align:left">Warning</td>
+<td style="text-align:right">2</td>
+<td style="text-align:left">警告通常表示意外状态。</td>
+</tr>
+<tr>
+<td style="text-align:left">Info</td>
+<td style="text-align:right">3</td>
+<td style="text-align:left">通常指示当前程序状态。</td>
+</tr>
+<tr>
+<td style="text-align:left">Debug</td>
+<td style="text-align:right">4</td>
+<td style="text-align:left">调试消息，对调试有用，但过于冗长，无法正常打开。</td>
+</tr>
+<tr>
+<td style="text-align:left">Verbose</td>
+<td style="text-align:right">5</td>
+<td style="text-align:left">将打印很多有用的调试程序流，并可能会影响性能。</td>
+</tr>
+</tbody>
+</table>
+<h3 id="日志记录接口"><a href="#日志记录接口" class="headerlink" title="日志记录接口"></a>日志记录接口</h3><h2 id="使用示例"><a href="#使用示例" class="headerlink" title="使用示例"></a>使用示例</h2><h3 id="示例代码"><a href="#示例代码" class="headerlink" title="示例代码"></a>示例代码</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div></pre></td><td class="code"><pre><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">"mozilla/Logging.h"</span></span></div><div class="line"></div><div class="line"><span class="keyword">using</span> mozilla::LogLevel;</div><div class="line"></div><div class="line"><span class="keyword">static</span> mozilla::<span class="function">LazyLogModule <span class="title">sLogger</span><span class="params">(<span class="string">"example_logger"</span>)</span></span>;</div><div class="line"></div><div class="line"><span class="function"><span class="keyword">static</span> <span class="keyword">void</span> <span class="title">DoStuff</span><span class="params">()</span></span></div><div class="line">&#123;</div><div class="line">  MOZ_LOG(sLogger, LogLevel::Info, (<span class="string">"Doing stuff."</span>));</div><div class="line">  </div><div class="line">  <span class="keyword">int</span> i = <span class="number">0</span>;</div><div class="line">  <span class="keyword">int</span> start = Time::NowMS();</div><div class="line">  MOZ_LOG(sLogger, LogLevel::Debug, (<span class="string">"Starting loop."</span>));</div><div class="line">  <span class="keyword">while</span> (i++ &lt; <span class="number">10</span>) &#123;</div><div class="line">    MOZ_LOG(sLogger, LogLevel::Verbose, (<span class="string">"i = %d"</span>, i));</div><div class="line">  &#125;</div><div class="line"></div><div class="line">  <span class="comment">// Only calculate the elapsed time if the Warning level is enabled.</span></div><div class="line">  <span class="keyword">if</span> (MOZ_LOG_TEST(sLogger, LogLevel::Warning)) &#123;</div><div class="line">    <span class="keyword">int</span> elapsed = Time::NowMS() - start;</div><div class="line">    <span class="keyword">if</span> (elapsed &gt; <span class="number">1000</span>) &#123;</div><div class="line">      MOZ_LOG(sLogger, LogLevel::Warning, (<span class="string">"Loop took %dms!"</span>, elapsed));</div><div class="line">    &#125;</div><div class="line">  &#125;</div><div class="line">  </div><div class="line">  <span class="keyword">if</span> (i != <span class="number">10</span>) &#123;</div><div class="line">    MOZ_LOG(sLogger, LogLevel::Error, (<span class="string">"i should be 10!"</span>));</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="开启日志输出"><a href="#开启日志输出" class="headerlink" title="开启日志输出"></a>开启日志输出</h3><p>模块的日志级别通过在启动应用程序之前设置环境变量来控制。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> MOZ_LOG=<span class="string">"example_logger:3"</span></div></pre></td></tr></table></figure></p>
+<p>有一些特殊的模块名可以改变日志行为。除日志级别以外，你可以指定一个或多个特殊模块名称。<br>|模块名||<br>|—-|—|<br>|append|将新日志附加到现有日志文件。|<br>|sync|同步打印每个日志，这对于实时检查行为或在崩溃之前获取日志很有用。|<br>|timestamp|插入时间戳开始每个日志行。|<br>|rotate:N|这限制了生成的日志文件的大小。仅保存最近的N兆字节的日志数据。我们使用.0，.1，.2，.3扩展名旋转四个日志文件。注意：此选项禁用“附加”和强制的时间戳。|</p>
+<p><br>例如，如果要指定“sync”，“timestamp”和“rotate”：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> MOZ_LOG=<span class="string">"example_logger:3,timestamp,sync,rotate:10"</span></div></pre></td></tr></table></figure></p>
+<h3 id="重定向日志到文件"><a href="#重定向日志到文件" class="headerlink" title="重定向日志到文件"></a>重定向日志到文件</h3><p>日志输出可以通过环境变量传递其路径来重定向到文件。</p>
+<blockquote>
+<p>默认情况下，日志输出到stderr。<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line"><span class="built_in">export</span> MOZ_LOG_FILE=<span class="string">"log.txt"</span></div></pre></td></tr></table></figure></p>
+</blockquote>
+<p>上述转储和附加选项仅适用于记录到文件。</p>
+<h2 id="E10S注意"><a href="#E10S注意" class="headerlink" title="E10S注意"></a>E10S注意</h2><p>当content进程在沙盒中时，它不能写入stderr或任何文件。可能需要将首选项security.sandbox.content.level设置为0才能查看日志。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;原文链接：Gecko-Logging&quot;&gt;&lt;a href=&quot;#原文链接：Gecko-Logging&quot; class=&quot;headerlink&quot; title=&quot;原文链接：Gecko_Logging&quot;&gt;&lt;/a&gt;原文链接：&lt;a href=&quot;https://developer.
+    
+    </summary>
+    
+      <category term="firefox" scheme="https://sk039.github.io/categories/firefox/"/>
+    
+    
+      <category term="linux" scheme="https://sk039.github.io/tags/linux/"/>
+    
+      <category term="gecko" scheme="https://sk039.github.io/tags/gecko/"/>
+    
+      <category term="firefox" scheme="https://sk039.github.io/tags/firefox/"/>
+    
+      <category term="调试" scheme="https://sk039.github.io/tags/%E8%B0%83%E8%AF%95/"/>
+    
+  </entry>
+  
+  <entry>
     <title>Linux远程桌面-x11vnc</title>
     <link href="https://sk039.github.io/2017/03/09/Linux%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2-x11vnc/"/>
     <id>https://sk039.github.io/2017/03/09/Linux远程桌面-x11vnc/</id>
     <published>2017-03-09T13:43:53.000Z</published>
-    <updated>2017-03-09T14:36:45.000Z</updated>
+    <updated>2017-03-10T03:30:00.061Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>x11vnc类似QQ远程控制，显示的图像是经过硬件加速的。</p>
@@ -50,14 +146,14 @@ autologin-user=sk
     
     </summary>
     
-      <category term="Linux" scheme="https://sk039.github.io/categories/Linux/"/>
+      <category term="linux" scheme="https://sk039.github.io/categories/linux/"/>
     
     
-      <category term="Linux" scheme="https://sk039.github.io/tags/Linux/"/>
+      <category term="linux" scheme="https://sk039.github.io/tags/linux/"/>
     
       <category term="vnc" scheme="https://sk039.github.io/tags/vnc/"/>
     
-      <category term="x11vnc" scheme="https://sk039.github.io/tags/x11vnc/"/>
+      <category term="xvnc" scheme="https://sk039.github.io/tags/xvnc/"/>
     
   </entry>
   

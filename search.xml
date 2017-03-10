@@ -4,7 +4,7 @@
   
     
     <entry>
-      <title><![CDATA[JavaScript Just-in-time (JIT) 工作原理]]></title>
+      <title><![CDATA[[转载] JavaScript Just-in-time (JIT) 工作原理]]></title>
       <url>https://sk039.github.io/2017/03/10/JavaScript-Just-in-time-JIT-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/</url>
       <content type="html"><![CDATA[<blockquote>
 <p>译文作者：胡子大哈<br>转载自知乎：<a href="https://zhuanlan.zhihu.com/p/25669120" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/25669120</a></p>
@@ -179,8 +179,8 @@
     </entry>
     
     <entry>
-      <title><![CDATA[Gecko日志记录]]></title>
-      <url>https://sk039.github.io/2017/03/10/%E7%BF%BB%E8%AF%91-Gecko%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/</url>
+      <title><![CDATA[[翻译] Gecko日志记录]]></title>
+      <url>https://sk039.github.io/2017/03/10/Gecko%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/</url>
       <content type="html"><![CDATA[<h2 id="原文链接：Gecko-Logging"><a href="#原文链接：Gecko-Logging" class="headerlink" title="原文链接：Gecko_Logging"></a>原文链接：<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Gecko_Logging" target="_blank" rel="external">Gecko_Logging</a></h2><blockquote>
 <p>Gecko核心代码提供了一个基础的C++日志记录框架。所有构建 (Debug、Release)默认开启，线程安全，是NSPR日志记录的首选。</p>
 </blockquote>

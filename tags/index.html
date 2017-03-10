@@ -104,7 +104,7 @@
   var CONFIG = {
     root: '/',
     scheme: 'Pisces',
-    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":false,"scrollpercent":false},
+    sidebar: {"position":"left","display":"post","offset":12,"offset_float":0,"b2t":true,"scrollpercent":true},
     fancybox: true,
     motion: true,
     duoshuo: {
@@ -182,7 +182,7 @@
       </a>
     </div>
       
-        <p class="site-subtitle"></p>
+        <h1 class="site-subtitle" itemprop="description"></h1>
       
   </div>
 
@@ -297,7 +297,7 @@
   <div id="posts" class="posts-expand">
   <header class="post-header">
 
-	<h1 class="post-title" itemprop="name headline">标签</h1>
+	<h2 class="post-title" itemprop="name headline">标签</h2>
 
 
 
@@ -345,12 +345,12 @@
       <section class="site-overview sidebar-panel sidebar-panel-active">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
-               src="/images/avatar.gif"
+               src="/images/24407203.png"
                alt="Denis Sccot" />
           <p class="site-author-name" itemprop="name">Denis Sccot</p>
            
               <p class="site-description motion-element" itemprop="description"></p>
-          
+           
         </div>
         <nav class="site-state motion-element">
 
@@ -414,6 +414,13 @@
       
 
       
+        <div class="back-to-top">
+          <i class="fa fa-arrow-up"></i>
+          
+            <span id="scrollpercent"><span>0</span>%</span>
+          
+        </div>
+      
 
     </div>
   </aside>
@@ -436,17 +443,6 @@
 </div>
 
 
-<div class="powered-by">
-  由 <a class="theme-link" href="https://hexo.io">Hexo</a> 强力驱动
-</div>
-
-<div class="theme-info">
-  主题 -
-  <a class="theme-link" href="https://github.com/iissnan/hexo-theme-next">
-    NexT.Pisces
-  </a>
-</div>
-
 
         
 
@@ -454,11 +450,6 @@
       </div>
     </footer>
 
-    
-      <div class="back-to-top">
-        <i class="fa fa-arrow-up"></i>
-        
-      </div>
     
     
   </div>

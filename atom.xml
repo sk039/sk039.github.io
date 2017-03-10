@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sk039.github.io/"/>
-  <updated>2017-03-10T14:30:29.631Z</updated>
+  <updated>2017-03-10T15:00:43.945Z</updated>
   <id>https://sk039.github.io/</id>
   
   <author>
@@ -20,13 +20,13 @@
     <link href="https://sk039.github.io/2017/03/10/JavaScript-Just-in-time-JIT-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/"/>
     <id>https://sk039.github.io/2017/03/10/JavaScript-Just-in-time-JIT-工作原理/</id>
     <published>2017-03-10T14:27:58.000Z</published>
-    <updated>2017-03-10T14:30:29.631Z</updated>
+    <updated>2017-03-10T15:00:43.945Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>译文作者：胡子大哈<br>转载自知乎：<a href="https://zhuanlan.zhihu.com/p/25669120" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/25669120</a></p>
 <p>原文作者：Lin Clark<br>英文原文：<a href="https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/" target="_blank" rel="external">https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/</a></p>
 </blockquote>
-<p>本文是关于 WebAssembly 系列的第二篇文章。如果你没有读先前文章的话，建议<a href="http://link.zhihu.com/?target=https%3A//hacks.mozilla.org/2017/02/a-cartoon-intro-to-webassembly/" target="_blank" rel="external">先读这里（英文文章）</a>。如果对 WebAssembly 没概念，建议<a href="http://link.zhihu.com/?target=http%3A//blog.csdn.net/wulixiaoxiao1/article/details/60581397" target="_blank" rel="external">先读这里（中文文章）</a>。</p>
+<p>本文是关于 WebAssembly 系列的第二篇文章。如果你没有读先前文章的话，建议<a href="https://hacks.mozilla.org/2017/02/a-cartoon-intro-to-webassembly/" target="_blank" rel="external">先读这里（英文文章）</a>。如果对 WebAssembly 没概念，建议<a href="http://blog.csdn.net/wulixiaoxiao1/article/details/60581397" target="_blank" rel="external">先读这里（中文文章）</a>。</p>
 <p>JavaScript 的启动比较缓慢，但是通过 JIT 可以使其变快，那么 JIT 是如何起作用的呢？</p>
 <h2 id="JavaScript-在浏览器中是如何运行的？"><a href="#JavaScript-在浏览器中是如何运行的？" class="headerlink" title="JavaScript 在浏览器中是如何运行的？"></a><strong>JavaScript 在浏览器中是如何运行的？</strong></h2><p>如果是你一个开发者，当你决定在你的页面中使用 JavaScript 的时候，有两个要考虑的事情：目标和问题。</p>
 <p><strong>目标</strong>：告诉计算机你想做什么。</p>
@@ -108,6 +108,10 @@
       <category term="js" scheme="https://sk039.github.io/tags/js/"/>
     
       <category term="jit" scheme="https://sk039.github.io/tags/jit/"/>
+    
+      <category term="翻译" scheme="https://sk039.github.io/tags/%E7%BF%BB%E8%AF%91/"/>
+    
+      <category term="转载" scheme="https://sk039.github.io/tags/%E8%BD%AC%E8%BD%BD/"/>
     
   </entry>
   
@@ -196,11 +200,11 @@
   </entry>
   
   <entry>
-    <title>[翻译] Gecko日志记录</title>
+    <title>Gecko日志记录</title>
     <link href="https://sk039.github.io/2017/03/10/%E7%BF%BB%E8%AF%91-Gecko%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/"/>
     <id>https://sk039.github.io/2017/03/10/翻译-Gecko日志记录/</id>
     <published>2017-03-10T03:25:14.000Z</published>
-    <updated>2017-03-10T03:30:01.265Z</updated>
+    <updated>2017-03-10T15:01:03.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="原文链接：Gecko-Logging"><a href="#原文链接：Gecko-Logging" class="headerlink" title="原文链接：Gecko_Logging"></a>原文链接：<a href="https://developer.mozilla.org/en-US/docs/Mozilla/Developer_guide/Gecko_Logging" target="_blank" rel="external">Gecko_Logging</a></h2><blockquote>
 <p>Gecko核心代码提供了一个基础的C++日志记录框架。所有构建 (Debug、Release)默认开启，线程安全，是NSPR日志记录的首选。</p>
@@ -288,6 +292,8 @@
       <category term="firefox" scheme="https://sk039.github.io/tags/firefox/"/>
     
       <category term="调试" scheme="https://sk039.github.io/tags/%E8%B0%83%E8%AF%95/"/>
+    
+      <category term="翻译" scheme="https://sk039.github.io/tags/%E7%BF%BB%E8%AF%91/"/>
     
   </entry>
   

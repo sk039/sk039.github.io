@@ -4,8 +4,36 @@
 
     
   <url>
+    <loc>https://sk039.github.io/2017/03/10/%E7%BF%BB%E8%AF%91-Gecko%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/</loc>
+    <lastmod>2017-03-10T15:01:03.000Z</lastmod>
+    <data>
+        <display>
+        <title>Gecko日志记录</title>
+        <pubTime>2017-03-10T03:25:14.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>gecko</tag>
+         
+        <tag>firefox</tag>
+         
+        <tag>调试</tag>
+         
+        <tag>翻译</tag>
+         
+         
+           
+             
+              <breadCrumb title="firefox" url="https://sk039.github.io/categories/firefox/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://sk039.github.io/2017/03/10/JavaScript-Just-in-time-JIT-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/</loc>
-    <lastmod>2017-03-10T14:30:29.631Z</lastmod>
+    <lastmod>2017-03-10T15:00:43.945Z</lastmod>
     <data>
         <display>
         <title>JavaScript Just-in-time (JIT) 工作原理</title>
@@ -14,6 +42,10 @@
         <tag>js</tag>
          
         <tag>jit</tag>
+         
+        <tag>翻译</tag>
+         
+        <tag>转载</tag>
          
          
            
@@ -89,32 +121,6 @@
            
              
               <breadCrumb title="hexo" url="https://sk039.github.io/categories/hexo/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://sk039.github.io/2017/03/10/%E7%BF%BB%E8%AF%91-Gecko%E6%97%A5%E5%BF%97%E8%AE%B0%E5%BD%95/</loc>
-    <lastmod>2017-03-10T03:30:01.265Z</lastmod>
-    <data>
-        <display>
-        <title>[翻译] Gecko日志记录</title>
-        <pubTime>2017-03-10T03:25:14.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>gecko</tag>
-         
-        <tag>firefox</tag>
-         
-        <tag>调试</tag>
-         
-         
-           
-             
-              <breadCrumb title="firefox" url="https://sk039.github.io/categories/firefox/"/>
           
         </display>
     </data>

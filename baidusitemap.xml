@@ -4,6 +4,54 @@
 
     
   <url>
+    <loc>https://sk039.github.io/2017/03/10/%E5%BC%80%E5%90%AF%E6%A0%B8%E5%BF%83%E8%BD%AC%E5%82%A8-core-dump-%E8%AE%BE%E7%BD%AE/</loc>
+    <lastmod>2017-03-10T15:15:32.969Z</lastmod>
+    <data>
+        <display>
+        <title>开启核心转储(Core Dump)设置</title>
+        <pubTime>2017-03-10T03:53:14.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>调试</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://sk039.github.io/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://sk039.github.io/2017/03/10/Debootstrap%E5%AE%89%E8%A3%85MATE%E6%A1%8C%E9%9D%A2/</loc>
+    <lastmod>2017-03-10T15:13:02.000Z</lastmod>
+    <data>
+        <display>
+        <title>Debootstrap安装MATE桌面</title>
+        <pubTime>2017-03-10T03:55:48.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>MATE</tag>
+         
+        <tag>debootstrap</tag>
+         
+        <tag>chroot</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://sk039.github.io/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://sk039.github.io/2017/03/10/JavaScript-Just-in-time-JIT-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/</loc>
     <lastmod>2017-03-10T15:11:27.348Z</lastmod>
     <data>
@@ -51,54 +99,6 @@
            
              
               <breadCrumb title="firefox" url="https://sk039.github.io/categories/firefox/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://sk039.github.io/2017/03/10/debootstrap%E5%AE%89%E8%A3%85MATE%E6%A1%8C%E9%9D%A2/</loc>
-    <lastmod>2017-03-10T03:56:45.928Z</lastmod>
-    <data>
-        <display>
-        <title>debootstrap安装MATE桌面</title>
-        <pubTime>2017-03-10T03:55:48.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>MATE</tag>
-         
-        <tag>debootstrap</tag>
-         
-        <tag>chroot</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="https://sk039.github.io/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://sk039.github.io/2017/03/10/%E5%BC%80%E5%90%AFCoreDump%E8%AE%BE%E7%BD%AE/</loc>
-    <lastmod>2017-03-10T03:54:18.126Z</lastmod>
-    <data>
-        <display>
-        <title>开启CoreDump设置</title>
-        <pubTime>2017-03-10T03:53:14.000Z</pubTime>
-        
-        <tag>linux</tag>
-         
-        <tag>调试</tag>
-         
-         
-           
-             
-              <breadCrumb title="linux" url="https://sk039.github.io/categories/linux/"/>
           
         </display>
     </data>

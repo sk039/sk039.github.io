@@ -116,11 +116,11 @@
   </entry>
   
   <entry>
-    <title>debootstrap安装MATE桌面</title>
-    <link href="https://sk039.github.io/2017/03/10/debootstrap%E5%AE%89%E8%A3%85MATE%E6%A1%8C%E9%9D%A2/"/>
-    <id>https://sk039.github.io/2017/03/10/debootstrap安装MATE桌面/</id>
+    <title>Debootstrap安装MATE桌面</title>
+    <link href="https://sk039.github.io/2017/03/10/Debootstrap%E5%AE%89%E8%A3%85MATE%E6%A1%8C%E9%9D%A2/"/>
+    <id>https://sk039.github.io/2017/03/10/Debootstrap安装MATE桌面/</id>
     <published>2017-03-10T03:55:48.000Z</published>
-    <updated>2017-03-10T03:56:45.928Z</updated>
+    <updated>2017-03-10T15:13:02.000Z</updated>
     
     <content type="html"><![CDATA[<h2 id="安装debootstrap"><a href="#安装debootstrap" class="headerlink" title="安装debootstrap"></a>安装debootstrap</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$ sudo apt-get install debootstrap</div><div class="line">$ debootstrap --arch=arm64 --include=mate-desktop-environment,lightdm-gtk-greeter,vim,net-tools,xorg,language-pack-zh-hans,fonts-wqy-microhei,ttf-wqy-microhei --components=main,restricted,multiverse,universe xenial /mnt/ http://mirrors.ustc.edu.cn/ubuntu-ports</div><div class="line">$ <span class="built_in">cd</span> ubuntu-xenial</div><div class="line">$ sudo mount -B /proc proc</div><div class="line">$ sudo mount -t tmpfs tmpfs tmp</div><div class="line">$ sudo cp /etc/resolv.conf etc</div><div class="line">$ xhost +</div><div class="line">$ <span class="built_in">export</span> DISPLAY=:0.0</div><div class="line">$ sudo chroot . </div><div class="line">$ useradd -m -p 123123 sk</div></pre></td></tr></table></figure>
 <p>修改/etc/apt/sources.list<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">deb http://mirrors.ustc.edu.cn/ubuntu-ports xenial main restricted multiverse universe</div></pre></td></tr></table></figure></p>
@@ -149,11 +149,11 @@
   </entry>
   
   <entry>
-    <title>开启CoreDump设置</title>
-    <link href="https://sk039.github.io/2017/03/10/%E5%BC%80%E5%90%AFCoreDump%E8%AE%BE%E7%BD%AE/"/>
-    <id>https://sk039.github.io/2017/03/10/开启CoreDump设置/</id>
+    <title>开启核心转储(Core Dump)设置</title>
+    <link href="https://sk039.github.io/2017/03/10/%E5%BC%80%E5%90%AF%E6%A0%B8%E5%BF%83%E8%BD%AC%E5%82%A8-core-dump-%E8%AE%BE%E7%BD%AE/"/>
+    <id>https://sk039.github.io/2017/03/10/开启核心转储-core-dump-设置/</id>
     <published>2017-03-10T03:53:14.000Z</published>
-    <updated>2017-03-10T03:54:18.126Z</updated>
+    <updated>2017-03-10T15:15:32.969Z</updated>
     
     <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#修改/etc/sysctl.conf</div><div class="line">kernel.core_pattern = /corefile/core-%e-%p-%t</div><div class="line">kernel.core_uses_pid = 1</div><div class="line">fs.suid_dumpable = 1</div><div class="line"></div><div class="line">#修改/etc/profile</div><div class="line">ulimit -S -c unlimited 2&gt;&amp;1</div><div class="line">#或修改 /etc/security/limits.conf</div></pre></td></tr></table></figure>
 ]]></content>

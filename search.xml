@@ -1,28 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Denis&#39;s Blog</title>
+<search>
   
-  <link href="/atom.xml" rel="self"/>
   
-  <link href="https://sk039.github.io/"/>
-  <updated>2017-03-09T14:36:45.000Z</updated>
-  <id>https://sk039.github.io/</id>
-  
-  <author>
-    <name>Denis Sccot</name>
     
-  </author>
-  
-  <generator uri="http://hexo.io/">Hexo</generator>
-  
-  <entry>
-    <title>Linux远程桌面-x11vnc</title>
-    <link href="https://sk039.github.io/2017/03/09/Linux%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2-x11vnc/"/>
-    <id>https://sk039.github.io/2017/03/09/Linux远程桌面-x11vnc/</id>
-    <published>2017-03-09T13:43:53.000Z</published>
-    <updated>2017-03-09T14:36:45.000Z</updated>
-    
-    <content type="html"><![CDATA[<blockquote>
+    <entry>
+      <title><![CDATA[Linux远程桌面-x11vnc]]></title>
+      <url>https://sk039.github.io/2017/03/09/Linux%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2-x11vnc/</url>
+      <content type="html"><![CDATA[<blockquote>
 <p>x11vnc类似QQ远程控制，显示的图像是经过硬件加速的。</p>
 </blockquote>
 <h2 id="x11vnc安装"><a href="#x11vnc安装" class="headerlink" title="x11vnc安装"></a>x11vnc安装</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ sudo apt install x11vnc</div></pre></td></tr></table></figure>
@@ -40,25 +24,26 @@ autologin-user=sk
 <li><a href="http://www.karlrunge.com/x11vnc/" target="_blank" rel="external">http://www.karlrunge.com/x11vnc/</a></li>
 </ol>
 ]]></content>
+      
+        <categories>
+            
+            <category> Linux </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> Linux </tag>
+            
+            <tag> vnc </tag>
+            
+            <tag> x11vnc </tag>
+            
+        </tags>
+        
+    </entry>
     
-    <summary type="html">
-    
-      &lt;blockquote&gt;
-&lt;p&gt;x11vnc类似QQ远程控制，显示的图像是经过硬件加速的。&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;h2 id=&quot;x11vnc安装&quot;&gt;&lt;a href=&quot;#x11vnc安装&quot; class=&quot;headerlink&quot; title=&quot;x11vnc安装&quot;&gt;&lt;/
-    
-    </summary>
-    
-      <category term="Linux" scheme="https://sk039.github.io/categories/Linux/"/>
-    
-    
-      <category term="Linux" scheme="https://sk039.github.io/tags/Linux/"/>
-    
-      <category term="vnc" scheme="https://sk039.github.io/tags/vnc/"/>
-    
-      <category term="x11vnc" scheme="https://sk039.github.io/tags/x11vnc/"/>
-    
-  </entry>
   
-</feed>
+  
+</search>

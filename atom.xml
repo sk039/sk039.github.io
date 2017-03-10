@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2017-03-09T14:36:45.955Z</updated>
+  <updated>2017-03-09T14:36:45.000Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -20,7 +20,7 @@
     <link href="http://yoursite.com/2017/03/09/Linux%E8%BF%9C%E7%A8%8B%E6%A1%8C%E9%9D%A2-x11vnc/"/>
     <id>http://yoursite.com/2017/03/09/Linux远程桌面-x11vnc/</id>
     <published>2017-03-09T13:43:53.000Z</published>
-    <updated>2017-03-09T14:36:45.955Z</updated>
+    <updated>2017-03-09T14:36:45.000Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>x11vnc类似QQ远程控制，显示的图像是经过硬件加速的。</p>

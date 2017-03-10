@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://sk039.github.io/2017/03/10/JavaScript-Just-in-time-JIT-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/</loc>
+    <lastmod>2017-03-10T14:30:29.631Z</lastmod>
+    <data>
+        <display>
+        <title>JavaScript Just-in-time (JIT) 工作原理</title>
+        <pubTime>2017-03-10T14:27:58.000Z</pubTime>
+        
+        <tag>js</tag>
+         
+        <tag>jit</tag>
+         
+         
+           
+             
+              <breadCrumb title="jsengine" url="https://sk039.github.io/categories/jsengine/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://sk039.github.io/2017/03/10/debootstrap%E5%AE%89%E8%A3%85MATE%E6%A1%8C%E9%9D%A2/</loc>
     <lastmod>2017-03-10T03:56:45.928Z</lastmod>
     <data>
@@ -83,11 +105,11 @@
         
         <tag>linux</tag>
          
-        <tag>调试</tag>
-         
         <tag>gecko</tag>
          
         <tag>firefox</tag>
+         
+        <tag>调试</tag>
          
          
            

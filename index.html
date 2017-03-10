@@ -299,6 +299,237 @@
   
 
   <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
+    <link itemprop="mainEntityOfPage" href="https://sk039.github.io/2017/03/10/JavaScript-Just-in-time-JIT-工作原理/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="Denis Sccot">
+      <meta itemprop="description" content="">
+      <meta itemprop="image" content="/images/24407203.png">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Denis's Blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h2 class="post-title" itemprop="name headline">
+            
+            
+              
+                
+                <a class="post-title-link" href="/2017/03/10/JavaScript-Just-in-time-JIT-工作原理/" itemprop="url">
+                  JavaScript Just-in-time (JIT) 工作原理
+                </a>
+              
+            
+          </h2>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-03-10T22:27:58+08:00">
+                2017-03-10
+              </time>
+            
+
+            
+
+            
+          </span>
+
+          
+            <span class="post-category" >
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/jsengine/" itemprop="url" rel="index">
+                    <span itemprop="name">jsengine</span>
+                  </a>
+                </span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                <span class="post-meta-divider">|</span>
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-comment-o"></i>
+                </span>
+                <a href="/2017/03/10/JavaScript-Just-in-time-JIT-工作原理/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count ds-thread-count" data-thread-key="2017/03/10/JavaScript-Just-in-time-JIT-工作原理/" itemprop="commentCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+          
+             <span id="/2017/03/10/JavaScript-Just-in-time-JIT-工作原理/" class="leancloud_visitors" data-flag-title="JavaScript Just-in-time (JIT) 工作原理">
+               <span class="post-meta-divider">|</span>
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               
+                 <span class="post-meta-item-text">阅读次数 </span>
+               
+                 <span class="leancloud-visitors-count"></span>
+             </span>
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          
+            <blockquote>
+<p>译文作者：胡子大哈<br>转载自知乎：<a href="https://zhuanlan.zhihu.com/p/25669120" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/25669120</a></p>
+<p>原文作者：Lin Clark<br>英文原文：<a href="https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/" target="_blank" rel="external">https://hacks.mozilla.org/2017/02/a-crash-course-in-just-in-time-jit-compilers/</a></p>
+</blockquote>
+<p>本文是关于 WebAssembly 系列的第二篇文章。如果你没有读先前文章的话，建议<a href="http://link.zhihu.com/?target=https%3A//hacks.mozilla.org/2017/02/a-cartoon-intro-to-webassembly/" target="_blank" rel="external">先读这里（英文文章）</a>。如果对 WebAssembly 没概念，建议<a href="http://link.zhihu.com/?target=http%3A//blog.csdn.net/wulixiaoxiao1/article/details/60581397" target="_blank" rel="external">先读这里（中文文章）</a>。</p>
+<p>JavaScript 的启动比较缓慢，但是通过 JIT 可以使其变快，那么 JIT 是如何起作用的呢？</p>
+<h2 id="JavaScript-在浏览器中是如何运行的？"><a href="#JavaScript-在浏览器中是如何运行的？" class="headerlink" title="JavaScript 在浏览器中是如何运行的？"></a><strong>JavaScript 在浏览器中是如何运行的？</strong></h2><p>如果是你一个开发者，当你决定在你的页面中使用 JavaScript 的时候，有两个要考虑的事情：目标和问题。</p>
+<p><strong>目标</strong>：告诉计算机你想做什么。</p>
+<p><strong>问题</strong>：你和计算机说不同的语言，无法沟通。</p>
+<p>你说的是人类的语言，而计算机用的是机器语言。机器语言也是一种语言，只是 JavaScript 或者其他高级编程语言机器能看得懂，而人类不用他们来交流罢了。它们是基于人类认知而设计出来的。</p>
+<p>所以呢，JavaScript 引擎的工作就是把人类的语言转换成机器能看懂的语言。</p>
+<p>这就像电影<a href="http://baike.baidu.com/item/%E9%99%8D%E4%B8%B4/19859551" target="_blank" rel="external">《降临》</a>中，人类和外星人的互相交流一样。</p>
+<p><img src="https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2017/02/02-01-alien03.png" alt=""></p>
+<p>在电影里面，人类和外星人不仅仅是语言不同，两个群体看待世界的方式都是不一样的。其实人类和机器也是类似（后面我会详细介绍）。</p>
+<p>那么翻译是如何进行的呢？</p>
+<p>在代码的世界中，通常有两种方式来翻译机器语言：解释器和编译器。</p>
+<p><strong>如果是通过解释器，翻译是一行行地边解释边执行</strong></p>
+<p><img src="https://hacks.mozilla.org/files/2017/02/02-02-interp02-500x291.png" alt=""></p>
+<p><strong>编译器是把源代码整个编译成目标代码，执行时不再需要编译器，直接在支持目标代码的平台上运行。</strong></p>
+<p><img src="https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2017/02/02-03-compile02.png" alt=""></p>
+<p>这两种翻译的方式都各有利弊。</p>
+<h3 id="解释器的利弊"><a href="#解释器的利弊" class="headerlink" title="解释器的利弊"></a><strong>解释器的利弊</strong></h3><p>解释器启动和执行的更快。你不需要等待整个编译过程完成就可以运行你的代码。从第一行开始翻译，就可以依次继续执行了。</p>
+<p>正是因为这个原因，解释器看起来更加适合 JavaScript。对于一个 Web 开发人员来讲，能够快速执行代码并看到结果是非常重要的。</p>
+<p>这就是为什么最开始的浏览器都是用 JavaScript 解释器的原因。</p>
+<p>可是当你运行同样的代码一次以上的时候，解释器的弊处就显现出来了。比如你执行一个循环，那解释器就不得不一次又一次的进行翻译，这是一种效率低下的表现。</p>
+<h3 id="编译器的利弊"><a href="#编译器的利弊" class="headerlink" title="编译器的利弊"></a><strong>编译器的利弊</strong></h3><p>编译器的问题则恰好相反。</p>
+<p>它需要花一些时间对整个源代码进行编译，然后生成目标文件才能在机器上执行。对于有循环的代码执行的很快，因为它不需要重复的去翻译每一次循环。</p>
+<p>另外一个不同是，编译器可以用更多的时间对代码进行优化，以使的代码执行的更快。而解释器是在 runtime 时进行这一步骤的，这就决定了它不可能在翻译的时候用很多时间进行优化。</p>
+<h2 id="Just-in-time-编译器：综合了两者的优点"><a href="#Just-in-time-编译器：综合了两者的优点" class="headerlink" title="Just-in-time 编译器：综合了两者的优点"></a><strong>Just-in-time 编译器：综合了两者的优点</strong></h2><p>为了解决解释器的低效问题，后来的浏览器把编译器也引入进来，形成混合模式。</p>
+<p>不同的浏览器实现这一功能的方式不同，不过其基本思想是一致的。在 JavaScript 引擎中增加一个监视器（也叫分析器）。监视器监控着代码的运行情况，记录代码一共运行了多少次、如何运行的等信息。</p>
+<p>起初，监视器监视着所有通过解释器的代码。</p>
+<p><img src="https://hacks.mozilla.org/files/2017/02/02-04-jit02-500x365.png" alt=""></p>
+<p>如果同一行代码运行了几次，这个代码段就被标记成了 “warm”，如果运行了很多次，则被标记成 “hot”。</p>
+<h3 id="基线编译器"><a href="#基线编译器" class="headerlink" title="基线编译器"></a><strong>基线编译器</strong></h3><p>如果一段代码变成了 “warm”，那么 JIT 就把它送到编译器去编译，并且把编译结果存储起来。</p>
+<p><img src="https://hacks.mozilla.org/files/2017/02/02-05-jit06-500x368.png" alt=""></p>
+<p>代码段的每一行都会被编译成一个“桩”（stub），同时给这个桩分配一个以“行号 + 变量类型”的索引。如果监视器监视到了执行同样的代码和同样的变量类型，那么就直接把这个已编译的版本 push 出来给浏览器。</p>
+<p>通过这样的做法可以加快执行速度，但是正如前面我所说的，编译器还可以找到更有效地执行代码的方法，也就是做优化。</p>
+<p>基线编译器可以做一部分这样的优化（下面我会给出例子），不过基线编译器优化的时间不能太久，因为会使得程序的执行在这里 hold 住。</p>
+<p>不过如果代码确实非常 “hot”（也就是说几乎所有的执行时间都耗费在这里），那么花点时间做优化也是值得的。</p>
+<h3 id="优化编译器"><a href="#优化编译器" class="headerlink" title="优化编译器"></a><strong>优化编译器</strong></h3><p>如果一个代码段变得 “very hot”，监视器会把它发送到优化编译器中。生成一个更快速和高效的代码版本出来，并且存储之。</p>
+<p><img src="https://hacks.mozilla.org/files/2017/02/02-06-jit09-500x365.png" alt=""></p>
+<p>为了生成一个更快速的代码版本，优化编译器必须做一些假设。例如，它会假设由同一个构造函数生成的实例都有相同的形状——就是说所有的实例都有相同的属性名，并且都以同样的顺序初始化，那么就可以针对这一模式进行优化。</p>
+<p>整个优化器起作用的链条是这样的，监视器从他所监视代码的执行情况做出自己的判断，接下来把它所整理的信息传递给优化器进行优化。如果某个循环中先前每次迭代的对象都有相同的形状，那么就可以认为它以后迭代的对象的形状都是相同的。可是对于 JavaScript 从来就没有保证这么一说，前 99 个对象保持着形状，可能第 100 个就少了某个属性。</p>
+<p>正是由于这样的情况，所以编译代码需要在运行之前检查其假设是不是合理的。如果合理，那么优化的编译代码会运行，如果不合理，那么 JIT 会认为做了一个错误的假设，并且把优化代码丢掉。</p>
+<p><img src="https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2017/02/02-07-jit11.png" alt=""></p>
+<p>这时（发生优化代码丢弃的情况）执行过程将会回到解释器或者基线编译器，这一过程叫做<strong>去优化</strong>。</p>
+<p>通常优化编译器会使得代码变得更快，但是一些情况也会引起一些意想不到的性能问题。如果你的代码一直陷入优化&lt;-&gt;去优化的怪圈，那么程序执行将会变慢，还不如基线编译器快。</p>
+<p>大多数的浏览器都做了限制，当优化/去优化循环发生的时候会尝试跳出这种循环。比如，如果 JIT 做了 10 次以上的优化并且又丢弃的操作，那么就不继续尝试去优化这段代码了桩。</p>
+<h3 id="一个优化的例子：类型特化（Type-specialization）"><a href="#一个优化的例子：类型特化（Type-specialization）" class="headerlink" title="一个优化的例子：类型特化（Type specialization）"></a><strong>一个优化的例子：类型特化（Type specialization）</strong></h3><p>有很多不同类型的优化方法，这里我介绍一种，让大家能够明白是如何优化的。优化编译器最成功一个特点叫做类型特化，下面详细解释。</p>
+<p>JavaScript 所使用的动态类型体系在运行时需要进行额外的解释工作，例如下面代码：<br><figure class="highlight javascript"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="function"><span class="keyword">function</span> <span class="title">arraySum</span>(<span class="params">arr</span>) </span>&#123;</div><div class="line">  <span class="keyword">var</span> sum = <span class="number">0</span>;</div><div class="line">  <span class="keyword">for</span> (<span class="keyword">var</span> i = <span class="number">0</span>; i &lt; arr.length; i++) &#123;</div><div class="line">    sum += arr[i];</div><div class="line">  &#125;</div><div class="line">&#125;</div></pre></td></tr></table></figure></p>
+<p>+= 循环中这一步看起来很简单，只需要进行一步计算，但是恰恰因为是用动态类型，他所需要的步骤要比你所想象的更复杂一些。</p>
+<p>我们假设 arr 是一个有 100 个整数的数组。当代码被标记为 “warm” 时，基线编译器就为函数中的每一个操作生成一个桩。sum += arr[i]会有一个相应的桩，并且把里面的 += 操作当成整数加法。</p>
+<p>但是，sum 和 arr[i] 两个数并不保证都是整数。因为在 JavaScript 中类型都是动态类型，在接下来的循环当中，arr[i] 很有可能变成了string 类型。整数加法和字符串连接是完全不同的两个操作，会被编译成不同的机器码。</p>
+<p>JIT 处理这个问题的方法是编译多基线桩。如果一个代码段是单一形态的（即总是以同一类型被调用），则只生成一个桩。如果是多形态的（即调用的过程中，类型不断变化），则会为操作所调用的每一个类型组合生成一个桩。</p>
+<p>这就是说 JIT 在选择一个桩之前，会进行多分枝选择，类似于决策树，问自己很多问题才会确定最终选择哪个，见下图：</p>
+<p><img src="https://hacks.mozilla.org/files/2017/02/02-08-decision_tree01-500x257.png" alt=""></p>
+<p>正是因为在基线编译器中每行代码都有自己的桩，所以 JIT 在每行代码被执行的时候都会检查数据类型。在循环的每次迭代，JIT 也都会重复一次分枝选择。</p>
+<p><img src="https://hacks.mozilla.org/files/2017/02/02-09-jit_loop02-500x323.png" alt=""></p>
+<p>如果代码在执行的过程中，JIT 不是每次都重复检查的话，那么执行的还会更快一些，而这就是优化编译器所需要做的工作之一了。</p>
+<p>优化编译器中，整个函数被统一编译，这样的话就可以在循环开始执行之前进行类型检查。</p>
+<p><img src="https://hacks.mozilla.org/files/2017/02/02-10-jit_loop02-500x318.png" alt=""></p>
+<p>一些浏览器的 JIT 优化更加复杂。比如在 Firefox 中，给一些数组设定了特定的类型，比如里面只包含整型。如果 arr 是这种数组类型，那么 JIT 就不需要检查 arr[i] 是不是整型了，这也意味着 JIT 可以在进入循环之前进行所有的类型检查。</p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a><strong>总结</strong></h2><p>简而言之 JIT 是什么呢？它是使 JavaScript 运行更快的一种手段，通过监视代码的运行状态，把 hot 代码（重复执行多次的代码）进行优化。通过这种方式，可以使 JavaScript 应用的性能提升很多倍。</p>
+<p>为了使执行速度变快，JIT 会增加很多多余的开销，这些开销包括：</p>
+<ul>
+<li>优化和去优化开销</li>
+<li>监视器记录信息对内存的开销</li>
+<li>发生去优化情况时恢复信息的记录对内存的开销</li>
+<li>对基线版本和优化后版本记录的内存开销</li>
+</ul>
+<p>这里还有很大的提升空间：即消除开销。通过消除开销使得性能上有进一步地提升，这也是 WebAssembly 所要做的事之一。</p>
+
+          
+        
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+    <div>
+      
+    </div>
+
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
     <link itemprop="mainEntityOfPage" href="https://sk039.github.io/2017/03/10/debootstrap安装MATE桌面/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
@@ -1228,7 +1459,7 @@ autologin-user=sk
           
             <div class="site-state-item site-state-posts">
               <a href="/archives">
-                <span class="site-state-item-count">5</span>
+                <span class="site-state-item-count">6</span>
                 <span class="site-state-item-name">日志</span>
               </a>
             </div>
@@ -1239,7 +1470,7 @@ autologin-user=sk
             
             <div class="site-state-item site-state-categories">
               <a href="/categories/index.html">
-                <span class="site-state-item-count">3</span>
+                <span class="site-state-item-count">4</span>
                 <span class="site-state-item-name">分类</span>
               </a>
             </div>
@@ -1250,7 +1481,7 @@ autologin-user=sk
             
             <div class="site-state-item site-state-tags">
               <a href="/tags/index.html">
-                <span class="site-state-item-count">11</span>
+                <span class="site-state-item-count">13</span>
                 <span class="site-state-item-name">标签</span>
               </a>
             </div>

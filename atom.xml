@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sk039.github.io/"/>
-  <updated>2017-03-10T03:51:48.359Z</updated>
+  <updated>2017-03-10T03:56:45.928Z</updated>
   <id>https://sk039.github.io/</id>
   
   <author>
@@ -14,6 +14,64 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>debootstrap安装MATE桌面</title>
+    <link href="https://sk039.github.io/2017/03/10/debootstrap%E5%AE%89%E8%A3%85MATE%E6%A1%8C%E9%9D%A2/"/>
+    <id>https://sk039.github.io/2017/03/10/debootstrap安装MATE桌面/</id>
+    <published>2017-03-10T03:55:48.000Z</published>
+    <updated>2017-03-10T03:56:45.928Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装debootstrap"><a href="#安装debootstrap" class="headerlink" title="安装debootstrap"></a>安装debootstrap</h2><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div></pre></td><td class="code"><pre><div class="line">$ sudo apt-get install debootstrap</div><div class="line">$ debootstrap --arch=arm64 --include=mate-desktop-environment,lightdm-gtk-greeter,vim,net-tools,xorg,language-pack-zh-hans,fonts-wqy-microhei,ttf-wqy-microhei --components=main,restricted,multiverse,universe xenial /mnt/ http://mirrors.ustc.edu.cn/ubuntu-ports</div><div class="line">$ <span class="built_in">cd</span> ubuntu-xenial</div><div class="line">$ sudo mount -B /proc proc</div><div class="line">$ sudo mount -t tmpfs tmpfs tmp</div><div class="line">$ sudo cp /etc/resolv.conf etc</div><div class="line">$ xhost +</div><div class="line">$ <span class="built_in">export</span> DISPLAY=:0.0</div><div class="line">$ sudo chroot . </div><div class="line">$ useradd -m -p 123123 sk</div></pre></td></tr></table></figure>
+<p>修改/etc/apt/sources.list<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">deb http://mirrors.ustc.edu.cn/ubuntu-ports xenial main restricted multiverse universe</div></pre></td></tr></table></figure></p>
+<blockquote>
+<p>!!! rtkit包会导致进桌面卡住</p>
+</blockquote>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;h2 id=&quot;安装debootstrap&quot;&gt;&lt;a href=&quot;#安装debootstrap&quot; class=&quot;headerlink&quot; title=&quot;安装debootstrap&quot;&gt;&lt;/a&gt;安装debootstrap&lt;/h2&gt;&lt;figure class=&quot;highlight bash
+    
+    </summary>
+    
+      <category term="linux" scheme="https://sk039.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://sk039.github.io/tags/linux/"/>
+    
+      <category term="MATE" scheme="https://sk039.github.io/tags/MATE/"/>
+    
+      <category term="debootstrap" scheme="https://sk039.github.io/tags/debootstrap/"/>
+    
+      <category term="chroot" scheme="https://sk039.github.io/tags/chroot/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>开启CoreDump设置</title>
+    <link href="https://sk039.github.io/2017/03/10/%E5%BC%80%E5%90%AFCoreDump%E8%AE%BE%E7%BD%AE/"/>
+    <id>https://sk039.github.io/2017/03/10/开启CoreDump设置/</id>
+    <published>2017-03-10T03:53:14.000Z</published>
+    <updated>2017-03-10T03:54:18.126Z</updated>
+    
+    <content type="html"><![CDATA[<figure class="highlight plain"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div></pre></td><td class="code"><pre><div class="line">#修改/etc/sysctl.conf</div><div class="line">kernel.core_pattern = /corefile/core-%e-%p-%t</div><div class="line">kernel.core_uses_pid = 1</div><div class="line">fs.suid_dumpable = 1</div><div class="line"></div><div class="line">#修改/etc/profile</div><div class="line">ulimit -S -c unlimited 2&gt;&amp;1</div><div class="line">#或修改 /etc/security/limits.conf</div></pre></td></tr></table></figure>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;figure class=&quot;highlight plain&quot;&gt;&lt;table&gt;&lt;tr&gt;&lt;td class=&quot;gutter&quot;&gt;&lt;pre&gt;&lt;div class=&quot;line&quot;&gt;1&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;2&lt;/div&gt;&lt;div class=&quot;line&quot;&gt;3&lt;/di
+    
+    </summary>
+    
+      <category term="linux" scheme="https://sk039.github.io/categories/linux/"/>
+    
+    
+      <category term="linux" scheme="https://sk039.github.io/tags/linux/"/>
+    
+      <category term="调试" scheme="https://sk039.github.io/tags/%E8%B0%83%E8%AF%95/"/>
+    
+  </entry>
   
   <entry>
     <title>Hexo创建个人博客</title>
@@ -129,11 +187,11 @@
     
       <category term="linux" scheme="https://sk039.github.io/tags/linux/"/>
     
+      <category term="调试" scheme="https://sk039.github.io/tags/%E8%B0%83%E8%AF%95/"/>
+    
       <category term="gecko" scheme="https://sk039.github.io/tags/gecko/"/>
     
       <category term="firefox" scheme="https://sk039.github.io/tags/firefox/"/>
-    
-      <category term="调试" scheme="https://sk039.github.io/tags/%E8%B0%83%E8%AF%95/"/>
     
   </entry>
   

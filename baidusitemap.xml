@@ -4,6 +4,54 @@
 
     
   <url>
+    <loc>https://sk039.github.io/2017/03/10/debootstrap%E5%AE%89%E8%A3%85MATE%E6%A1%8C%E9%9D%A2/</loc>
+    <lastmod>2017-03-10T03:56:45.928Z</lastmod>
+    <data>
+        <display>
+        <title>debootstrap安装MATE桌面</title>
+        <pubTime>2017-03-10T03:55:48.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>MATE</tag>
+         
+        <tag>debootstrap</tag>
+         
+        <tag>chroot</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://sk039.github.io/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://sk039.github.io/2017/03/10/%E5%BC%80%E5%90%AFCoreDump%E8%AE%BE%E7%BD%AE/</loc>
+    <lastmod>2017-03-10T03:54:18.126Z</lastmod>
+    <data>
+        <display>
+        <title>开启CoreDump设置</title>
+        <pubTime>2017-03-10T03:53:14.000Z</pubTime>
+        
+        <tag>linux</tag>
+         
+        <tag>调试</tag>
+         
+         
+           
+             
+              <breadCrumb title="linux" url="https://sk039.github.io/categories/linux/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://sk039.github.io/2017/03/10/Hexo%E5%88%9B%E5%BB%BA%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2/</loc>
     <lastmod>2017-03-10T03:51:48.359Z</lastmod>
     <data>
@@ -35,11 +83,11 @@
         
         <tag>linux</tag>
          
+        <tag>调试</tag>
+         
         <tag>gecko</tag>
          
         <tag>firefox</tag>
-         
-        <tag>调试</tag>
          
          
            

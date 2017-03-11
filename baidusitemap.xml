@@ -4,6 +4,30 @@
 
     
   <url>
+    <loc>https://sk039.github.io/2017/03/11/GTK-%E5%AE%9E%E7%8E%B0%E8%BF%9B%E7%A8%8B%E9%97%B4%E5%B5%8C%E5%85%A5%E7%AA%97%E5%8F%A3/</loc>
+    <lastmod>2017-03-11T01:53:39.456Z</lastmod>
+    <data>
+        <display>
+        <title>[转载] GTK+实现进程间嵌入窗口</title>
+        <pubTime>2017-03-11T01:46:21.000Z</pubTime>
+        
+        <tag>gtk</tag>
+         
+        <tag>linux</tag>
+         
+        <tag>xembed</tag>
+         
+         
+           
+             
+              <breadCrumb title="gtk编程" url="https://sk039.github.io/categories/gtk%E7%BC%96%E7%A8%8B/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://sk039.github.io/2017/03/10/%E5%BC%80%E5%90%AF%E6%A0%B8%E5%BF%83%E8%BD%AC%E5%82%A8-core-dump-%E8%AE%BE%E7%BD%AE/</loc>
     <lastmod>2017-03-10T15:15:32.969Z</lastmod>
     <data>
@@ -59,11 +83,11 @@
         <title>[转载] JavaScript Just-in-time (JIT) 工作原理</title>
         <pubTime>2017-03-10T14:27:58.000Z</pubTime>
         
+        <tag>翻译</tag>
+         
         <tag>js</tag>
          
         <tag>jit</tag>
-         
-        <tag>翻译</tag>
          
         <tag>转载</tag>
          

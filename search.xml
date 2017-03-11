@@ -4,6 +4,44 @@
   
     
     <entry>
+      <title><![CDATA[[转载] GTK+实现进程间嵌入窗口]]></title>
+      <url>https://sk039.github.io/2017/03/11/GTK-%E5%AE%9E%E7%8E%B0%E8%BF%9B%E7%A8%8B%E9%97%B4%E5%B5%8C%E5%85%A5%E7%AA%97%E5%8F%A3/</url>
+      <content type="html"><![CDATA[<blockquote>
+<p>转载自：<a href="http://blog.csdn.net/absurd/article/details/600637" target="_blank" rel="external">http://blog.csdn.net/absurd/article/details/600637</a></p>
+</blockquote>
+<h2 id="Socket-Plug"><a href="#Socket-Plug" class="headerlink" title="Socket/Plug"></a>Socket/Plug</h2><p>Windows下的托盘(tray)是不是很酷呢？利用这种机制，你可以方便的把自己的应用程序嵌入到任务栏里。大多数时候，应用程序在后台工作，不会干扰用户，当用户想查看某些信息时，只点一下这个小图标就行了。应用程序在响应点击事件时，可以把应用程序提到前台来，可以弹出一个对话框，可以显示一个菜单，或者做其它任何事情，这完全是应用程序自己的事，与任务栏一点关系都没有。</p>
+<p>在Linux下的桌面环境里，不但有这个功能，而且功能更加强大。Linux下的桌面环境有好几种，在PC上最为流行的当然是KDE和GNOME。它们往往都有一套自己的机制，搞得不同桌面环境下开发的应用程序之间的兼容性很差。为了让这些应用程序之间能够互相嵌入，当然得有一个标准才行。为此，freedesktop.org组织制定了一个XEmbed协议(<a href="https://specifications.freedesktop.org/xembed-spec/xembed-spec-latest.html)。" target="_blank" rel="external">https://specifications.freedesktop.org/xembed-spec/xembed-spec-latest.html)。</a></p>
+<p>只要遵守XEmbed协议，用Qt写的应用程序可以嵌入到GNOME的任务栏里，用GTK+写的应用程序可以嵌入到KDE的任务栏里。不但如此，在需要的情况下，两个应用程序之间也可以任意嵌入，而不必关心它们是用哪个库实现的。</p>
+<p>虽然说这个协议很简单，自己要从头实现一个，未免太麻烦了。为了简化应用程序开发，GTK+已经封装一套函数。本文用一个简单的实例，介绍如何开发这类应用。在此之前，我们先熟悉几个概念：</p>
+<p>插座(socket)：这里指宿主窗口，它可以让其它应用程序，把窗口嵌入到它里面。如，任务栏就是一个插座(socket)。</p>
+<p>插头(plug): 顾名思义，它就是被嵌入的窗口，可以插入到插座(socket)上。相对任务栏而言，应用程序的窗口就是插头(plug)。</p>
+<p>插头(plug)/插座(socket)两者可以在同一个应用中，也可以在不同的应用程序中。在同一个应用程序里，这种做法意义不大，而且可以说是自找麻烦。大多数情况下，它们分别位于不同的进程之中，一个插座(socket)窗口可以容纳多个插头(plug)窗口中，而一个插头(plug)窗口只能处于一个插座(socket)窗口之中。</p>
+<h2 id="示例"><a href="#示例" class="headerlink" title="示例"></a>示例</h2><h3 id="插座-socket-端应用程序实现："><a href="#插座-socket-端应用程序实现：" class="headerlink" title="插座(socket)端应用程序实现："></a>插座(socket)端应用程序实现：</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div></pre></td><td class="code"><pre><div class="line"><span class="comment">//socket.c</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;gtk/gtk.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">( <span class="keyword">int</span>   argc, <span class="keyword">char</span> *argv[] )</span></span></div><div class="line">&#123;</div><div class="line">    GtkWidget *window;</div><div class="line">    GtkWidget *socket;</div><div class="line"></div><div class="line">    gtk_init (&amp;argc, &amp;argv);</div><div class="line"></div><div class="line">    window = gtk_window_new(GTK_WINDOW_TOPLEVEL);</div><div class="line">    gtk_widget_set_size_request(window, <span class="number">80</span>, <span class="number">40</span>);</div><div class="line"></div><div class="line">    socket = gtk_socket_new();</div><div class="line">    gtk_widget_show (socket);</div><div class="line">    gtk_container_add (GTK_CONTAINER (window), socket);</div><div class="line">    gtk_widget_show (window);</div><div class="line">    g_message(<span class="string">"socket_id=%d/n"</span>, gtk_socket_get_id(socket));</div><div class="line">    gtk_main ();</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="插头-plug-端应用程序实现："><a href="#插头-plug-端应用程序实现：" class="headerlink" title="插头(plug)端应用程序实现："></a>插头(plug)端应用程序实现：</h3><figure class="highlight c++"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div><div class="line">19</div><div class="line">20</div><div class="line">21</div><div class="line">22</div><div class="line">23</div><div class="line">24</div><div class="line">25</div><div class="line">26</div><div class="line">27</div><div class="line">28</div><div class="line">29</div><div class="line">30</div><div class="line">31</div><div class="line">32</div><div class="line">33</div></pre></td><td class="code"><pre><div class="line"><span class="comment">// plug.c</span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;stdlib.h&gt;</span></span></div><div class="line"><span class="meta">#<span class="meta-keyword">include</span> <span class="meta-string">&lt;gtk/gtk.h&gt;</span></span></div><div class="line"></div><div class="line"><span class="function"><span class="keyword">int</span> <span class="title">main</span><span class="params">( <span class="keyword">int</span>   argc,  <span class="keyword">char</span> *argv[] )</span></span></div><div class="line">&#123;</div><div class="line">    gint socket_id = <span class="number">0</span>;</div><div class="line"></div><div class="line">    GtkWidget *window;</div><div class="line">    GtkWidget *button;</div><div class="line"></div><div class="line">    gtk_init (&amp;argc, &amp;argv);</div><div class="line"></div><div class="line">    <span class="keyword">if</span>(argc != <span class="number">2</span>)</div><div class="line">    &#123;</div><div class="line">        g_message(<span class="string">"usage: %s [socket]/n"</span>, argv[<span class="number">0</span>]);</div><div class="line">        <span class="keyword">return</span> <span class="number">-1</span>;</div><div class="line">    &#125;</div><div class="line">    <span class="keyword">else</span></div><div class="line">    &#123;</div><div class="line">        socket_id = atoi(argv[<span class="number">1</span>]);</div><div class="line">    &#125;</div><div class="line"></div><div class="line">    window = gtk_plug_new(socket_id);</div><div class="line">    button = gtk_button_new ();</div><div class="line">    gtk_widget_show (button);</div><div class="line">    gtk_container_add (GTK_CONTAINER (window), button);</div><div class="line">    gtk_widget_show (window);</div><div class="line"></div><div class="line">    gtk_main ();</div><div class="line">    <span class="keyword">return</span> <span class="number">0</span>;</div><div class="line"></div><div class="line">&#125;</div></pre></td></tr></table></figure>
+<h3 id="Makefile"><a href="#Makefile" class="headerlink" title="Makefile"></a>Makefile</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div><div class="line">7</div><div class="line">8</div><div class="line">9</div><div class="line">10</div><div class="line">11</div><div class="line">12</div><div class="line">13</div><div class="line">14</div><div class="line">15</div><div class="line">16</div><div class="line">17</div><div class="line">18</div></pre></td><td class="code"><pre><div class="line">CC = gcc</div><div class="line"></div><div class="line">CFLAGS = -Wall -Wunused         \</div><div class="line">    -DG_DISABLE_DEPRECATED      \</div><div class="line">    -DGDK_DISABLE_DEPRECATED    \</div><div class="line">    -DGDK_PIXBUF_DISABLE_DEPRECATED \</div><div class="line">    -DGTK_DISABLE_DEPRECATED</div><div class="line"></div><div class="line">all: plug socket</div><div class="line"></div><div class="line">plug: plug.c</div><div class="line">	$(CC) plug.c -o plug $(CFLAGS) `pkg-config gtk+-2.0 --cflags --libs`</div><div class="line"></div><div class="line">socket: socket.c</div><div class="line">	$(CC) socket.c -o socket $(CFLAGS) `pkg-config gtk+-2.0 --cflags --libs`</div><div class="line"></div><div class="line">clean:</div><div class="line">	rm <span class="_">-f</span> *.o plug socket</div></pre></td></tr></table></figure>
+<p>当然，这里为了便于理解，程序写得很简单，实际的应用程序要比这复杂一些，它们的原理都是一样的，大家可参考GTK+的API手册。</p>
+]]></content>
+      
+        <categories>
+            
+            <category> gtk编程 </category>
+            
+        </categories>
+        
+        
+        <tags>
+            
+            <tag> gtk </tag>
+            
+            <tag> linux </tag>
+            
+            <tag> xembed </tag>
+            
+        </tags>
+        
+    </entry>
+    
+    <entry>
       <title><![CDATA[[转载] JavaScript Just-in-time (JIT) 工作原理]]></title>
       <url>https://sk039.github.io/2017/03/10/JavaScript-Just-in-time-JIT-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/</url>
       <content type="html"><![CDATA[<blockquote>
@@ -88,11 +126,11 @@
         
         <tags>
             
+            <tag> 翻译 </tag>
+            
             <tag> js </tag>
             
             <tag> jit </tag>
-            
-            <tag> 翻译 </tag>
             
             <tag> 转载 </tag>
             

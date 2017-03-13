@@ -4,6 +4,62 @@
 
     
   <url>
+    <loc>https://sk039.github.io/2017/03/13/%E7%BC%96%E8%AF%91%E5%99%A8%E5%A6%82%E4%BD%95%E7%94%9F%E6%88%90%E6%B1%87%E7%BC%96/</loc>
+    <lastmod>2017-03-13T02:05:04.507Z</lastmod>
+    <data>
+        <display>
+        <title>编译器如何生成汇编</title>
+        <pubTime>2017-03-13T02:02:51.000Z</pubTime>
+        
+        <tag>翻译</tag>
+         
+        <tag>js</tag>
+         
+        <tag>jit</tag>
+         
+        <tag>wasm</tag>
+         
+        <tag>转载</tag>
+         
+         
+           
+             
+              <breadCrumb title="jsengine" url="https://sk039.github.io/categories/jsengine/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://sk039.github.io/2017/03/10/JavaScript-Just-in-time-JIT-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/</loc>
+    <lastmod>2017-03-13T02:04:27.674Z</lastmod>
+    <data>
+        <display>
+        <title>[转载] JavaScript Just-in-time (JIT) 工作原理</title>
+        <pubTime>2017-03-10T14:27:58.000Z</pubTime>
+        
+        <tag>翻译</tag>
+         
+        <tag>js</tag>
+         
+        <tag>jit</tag>
+         
+        <tag>wasm</tag>
+         
+        <tag>转载</tag>
+         
+         
+           
+             
+              <breadCrumb title="jsengine" url="https://sk039.github.io/categories/jsengine/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://sk039.github.io/2017/03/11/GTK-%E5%AE%9E%E7%8E%B0%E8%BF%9B%E7%A8%8B%E9%97%B4%E5%B5%8C%E5%85%A5%E7%AA%97%E5%8F%A3/</loc>
     <lastmod>2017-03-11T09:27:27.900Z</lastmod>
     <data>
@@ -11,9 +67,9 @@
         <title>[转载] GTK+实现进程间嵌入窗口</title>
         <pubTime>2017-03-11T01:46:21.000Z</pubTime>
         
-        <tag>gtk</tag>
-         
         <tag>linux</tag>
+         
+        <tag>gtk</tag>
          
         <tag>xembed</tag>
          
@@ -69,32 +125,6 @@
            
              
               <breadCrumb title="linux" url="https://sk039.github.io/categories/linux/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://sk039.github.io/2017/03/10/JavaScript-Just-in-time-JIT-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/</loc>
-    <lastmod>2017-03-10T15:11:27.348Z</lastmod>
-    <data>
-        <display>
-        <title>[转载] JavaScript Just-in-time (JIT) 工作原理</title>
-        <pubTime>2017-03-10T14:27:58.000Z</pubTime>
-        
-        <tag>翻译</tag>
-         
-        <tag>js</tag>
-         
-        <tag>jit</tag>
-         
-        <tag>转载</tag>
-         
-         
-           
-             
-              <breadCrumb title="jsengine" url="https://sk039.github.io/categories/jsengine/"/>
           
         </display>
     </data>

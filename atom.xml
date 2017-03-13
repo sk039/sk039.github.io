@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sk039.github.io/"/>
-  <updated>2017-03-11T09:27:27.900Z</updated>
+  <updated>2017-03-13T02:05:04.507Z</updated>
   <id>https://sk039.github.io/</id>
   
   <author>
@@ -14,6 +14,71 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>编译器如何生成汇编</title>
+    <link href="https://sk039.github.io/2017/03/13/%E7%BC%96%E8%AF%91%E5%99%A8%E5%A6%82%E4%BD%95%E7%94%9F%E6%88%90%E6%B1%87%E7%BC%96/"/>
+    <id>https://sk039.github.io/2017/03/13/编译器如何生成汇编/</id>
+    <published>2017-03-13T02:02:51.000Z</published>
+    <updated>2017-03-13T02:05:04.507Z</updated>
+    
+    <content type="html"><![CDATA[<blockquote>
+<p>转载自： <a href="https://zhuanlan.zhihu.com/p/25718411" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/25718411</a><br>原文作者：Lin Clark<br>原文链接：<a href="https://hacks.mozilla.org/2017/02/a-crash-course-in-assembly/" target="_blank" rel="external">A crash course in assembly</a></p>
+</blockquote>
+<p><em>本文是关于 WebAssembly 系列的第三篇文章</em><strong>（本系列共六篇文章，后续会将连接补充归整）</strong><em>。如果你没有读先前文章的话，建议</em><a href="https://hacks.mozilla.org/2017/02/a-cartoon-intro-to-webassembly/" target="_blank" rel="external">先读这里（英文文章）</a><em>。如果对 WebAssembly 没概念，建议</em><a href="http://blog.csdn.net/wulixiaoxiao1/article/details/60581397" target="_blank" rel="external">先读这里（中文文章）</a><em>。</em></p>
+<p>理解什么是汇编，以及编译器如何生成它，对于理解 WebAssembly 是很有帮助的。</p>
+<p>在上一篇<a href="https://zhuanlan.zhihu.com/p/25669120" target="_blank" rel="external">关于 JIT</a> 的文章中，我介绍了和计算机打交道，就像同外星人打交道一样。</p>
+<p><img src="https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2017/02/03-01-alien03.png" alt=""></p>
+<p>现在来思考一下“外星人”的大脑是如何工作的——机器的“大脑”是如何对我们输入给它的内容进行分析和理解的。</p>
+<p>“大脑”中，有一部分负责思考——处理加法、减法或者逻辑运算。还有其他的部分分别负责短暂记忆和长期记忆的。</p>
+<p>这些不同的部分都有自己的名字：</p>
+<ul>
+<li>负责思考的部分叫做算数逻辑单元（ALU）</li>
+<li>寄存器提供短暂记忆功能</li>
+<li>随机存取存储器（RAM）提供长期记忆功能</li>
+</ul>
+<p><img src="https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2017/02/03-02-computer_architecture09.png" alt=""></p>
+<p>机器代码中的语句称作指令。</p>
+<p>那么在指令进入“大脑”以后都发生了什么呢？它们会被切分为不同的部分传送到不同的单元进行处理。</p>
+<p>“大脑”切分指令通过不同连接线路进行。举个例子，“大脑”会将指令最开始的 6 比特通过管道送到 ALU 中。而 ALU 会通过 0 和 1 的位置来决定对两个数做加法。</p>
+<p>这串 01 串就叫做“操作码”，它告诉了 ALU 要执行什么样的操作。</p>
+<p><img src="https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2017/02/03-03-computer_architecture12.png" alt=""></p>
+<p>然后“大脑”会取后面两个连续的 3 比特 01 串来确定把哪两个数加到一起，而这 3 比特指的是寄存器的地址。<br><img src="https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2017/02/03-04-computer_architecture17.png" alt=""></p>
+<p>注意看上面机器码的注释：“ADD R1 R2”，这对于人类来讲很容易理解其含义。这就是汇编，也叫符号机器码，它使人类也能看懂机器代码的含义。</p>
+<p>可以看到汇编和这台机器的机器码之间有直接的映射关系。正是因为如此，拥有不同机器结构的计算机会有不同的汇编系统。如果你有一个机器，它有自己的内部结构，那么它就需要它所独有的汇编语言。</p>
+<p>从上面的分析可以知道我们进行机器码的翻译并不是只有一种，不同的机器有不同的机器码，就像我们人类也说各种各样的语言一样，机器也“说”不同的语言。</p>
+<p>人类和外星人之间的语言翻译，可能会从英语、德语或中文翻译到外星语 A 或者外星语 B。而在程序的世界里，则是从 C、C++ 或者 JAVA 翻译到 x86 或者 ARM。</p>
+<p>你想要从任意一个高级语言翻译到众多汇编语言中的一种（依赖机器内部结构），其中一种方式是创建不同的翻译器来完成各种高级语言到汇编的映射。</p>
+<p><img src="https://2r4s9p1yi1fa2jd7j43zph8r-wpengine.netdna-ssl.com/files/2017/02/03-05-langs05.png" alt=""></p>
+<p>这种翻译的效率实在太低了。为了解决这个问题，大多数编译器都会在中间多加一层。它会把高级语言翻译到一个低层，而这个低层又没有低到机器码这个层级。这就是中间代码（ intermediate representation，IR）。</p>
+<p><img src="https://hacks.mozilla.org/files/2017/02/03-06-langs06-500x317.png" alt=""></p>
+<p>这就是说编译器会把高级语言翻译到 IR 语言，而编译器另外的部分再把 IR 语言编译成特定目标结构的可执行代码。</p>
+<p>重新总结一下：<strong>编译器的前端把高级语言翻译到 IR，编译器的后端把 IR 翻译成目标机器的汇编代码。</strong></p>
+<p><img src="https://hacks.mozilla.org/files/2017/02/03-07-langs09-500x306.png" alt=""></p>
+<h2 id="总结"><a href="#总结" class="headerlink" title="总结"></a><strong>总结</strong></h2><p>本文介绍了什么是汇编以及编译器是如何把高级语言翻译成汇编语言的，在<a href="https://hacks.mozilla.org/2017/02/creating-and-working-with-webassembly-modules/" target="_blank" rel="external">下一篇</a>文章中，我们来介绍 WebAssembly 的工作原理。</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;blockquote&gt;
+&lt;p&gt;转载自： &lt;a href=&quot;https://zhuanlan.zhihu.com/p/25718411&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;https://zhuanlan.zhihu.com/p/25718411&lt;/a
+    
+    </summary>
+    
+      <category term="jsengine" scheme="https://sk039.github.io/categories/jsengine/"/>
+    
+    
+      <category term="翻译" scheme="https://sk039.github.io/tags/%E7%BF%BB%E8%AF%91/"/>
+    
+      <category term="js" scheme="https://sk039.github.io/tags/js/"/>
+    
+      <category term="jit" scheme="https://sk039.github.io/tags/jit/"/>
+    
+      <category term="wasm" scheme="https://sk039.github.io/tags/wasm/"/>
+    
+      <category term="转载" scheme="https://sk039.github.io/tags/%E8%BD%AC%E8%BD%BD/"/>
+    
+  </entry>
   
   <entry>
     <title>[转载] GTK+实现进程间嵌入窗口</title>
@@ -49,9 +114,9 @@
       <category term="gtk编程" scheme="https://sk039.github.io/categories/gtk%E7%BC%96%E7%A8%8B/"/>
     
     
-      <category term="gtk" scheme="https://sk039.github.io/tags/gtk/"/>
-    
       <category term="linux" scheme="https://sk039.github.io/tags/linux/"/>
+    
+      <category term="gtk" scheme="https://sk039.github.io/tags/gtk/"/>
     
       <category term="xembed" scheme="https://sk039.github.io/tags/xembed/"/>
     
@@ -62,7 +127,7 @@
     <link href="https://sk039.github.io/2017/03/10/JavaScript-Just-in-time-JIT-%E5%B7%A5%E4%BD%9C%E5%8E%9F%E7%90%86/"/>
     <id>https://sk039.github.io/2017/03/10/JavaScript-Just-in-time-JIT-工作原理/</id>
     <published>2017-03-10T14:27:58.000Z</published>
-    <updated>2017-03-10T15:11:27.348Z</updated>
+    <updated>2017-03-13T02:04:27.674Z</updated>
     
     <content type="html"><![CDATA[<blockquote>
 <p>译文作者：胡子大哈<br>转载自知乎：<a href="https://zhuanlan.zhihu.com/p/25669120" target="_blank" rel="external">https://zhuanlan.zhihu.com/p/25669120</a></p>
@@ -152,6 +217,8 @@
       <category term="js" scheme="https://sk039.github.io/tags/js/"/>
     
       <category term="jit" scheme="https://sk039.github.io/tags/jit/"/>
+    
+      <category term="wasm" scheme="https://sk039.github.io/tags/wasm/"/>
     
       <category term="转载" scheme="https://sk039.github.io/tags/%E8%BD%AC%E8%BD%BD/"/>
     

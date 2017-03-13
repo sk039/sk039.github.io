@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="https://sk039.github.io/"/>
-  <updated>2017-03-13T02:05:04.507Z</updated>
+  <updated>2017-03-13T08:28:23.785Z</updated>
   <id>https://sk039.github.io/</id>
   
   <author>
@@ -14,6 +14,43 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>替换fonts.googleapi.com</title>
+    <link href="https://sk039.github.io/2017/03/13/%E6%9B%BF%E6%8D%A2fonts-googleapi-com/"/>
+    <id>https://sk039.github.io/2017/03/13/替换fonts-googleapi-com/</id>
+    <published>2017-03-13T08:24:17.000Z</published>
+    <updated>2017-03-13T08:28:23.785Z</updated>
+    
+    <content type="html"><![CDATA[<p>可以换成以下网址：</p>
+<ul>
+<li>fonts.css.network </li>
+<li>libs.bangbang93.com </li>
+<li>fonts.proxy.ustclug.org </li>
+<li>cdn.moefont.com/fonts</li>
+</ul>
+<p>以Next主题为例：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div><div class="line">2</div><div class="line">3</div><div class="line">4</div><div class="line">5</div><div class="line">6</div></pre></td><td class="code"><pre><div class="line"><span class="comment"># themes/next/_config.yml</span></div><div class="line">font:</div><div class="line">  <span class="built_in">enable</span>: <span class="literal">true</span>                                                                  </div><div class="line"></div><div class="line">  <span class="comment"># Uri of fonts host. E.g. //fonts.googleapis.com (Default)</span></div><div class="line">  host: //fonts.css.network</div></pre></td></tr></table></figure></p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;可以换成以下网址：&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;fonts.css.network &lt;/li&gt;
+&lt;li&gt;libs.bangbang93.com &lt;/li&gt;
+&lt;li&gt;fonts.proxy.ustclug.org &lt;/li&gt;
+&lt;li&gt;cdn.moefont.com/fonts&lt;
+    
+    </summary>
+    
+      <category term="hexo" scheme="https://sk039.github.io/categories/hexo/"/>
+    
+    
+      <category term="hexo" scheme="https://sk039.github.io/tags/hexo/"/>
+    
+      <category term="web" scheme="https://sk039.github.io/tags/web/"/>
+    
+  </entry>
   
   <entry>
     <title>编译器如何生成汇编</title>

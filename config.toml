@@ -1,0 +1,58 @@
+# The URL the site will be built for
+base_url = "https://kscr-rust.github.io"
+title = "kscr"
+# Whether to automatically compile all Sass files in the sass directory
+compile_sass = true
+# Whether to build a search index to be used later on by a JavaScript library
+build_search_index = true
+theme = "apollo"
+minify_html = true
+generate_feeds = true
+taxonomies = [
+    {name = "categories", rss = true},
+    {name = "tags", rss = true},
+]
+
+[search]
+include_title = true
+include_description = true
+include_path = true
+include_content = true
+index_format = "elasticlunr_json"
+
+[markdown]
+highlight_code = true
+highlight_theme = "css"
+highlight_themes_css = [
+  { theme = "ayu-dark", filename = "syntax-theme-dark.css" },
+  { theme = "ayu-light", filename = "syntax-theme-light.css" },
+]
+
+[extra]
+mathjax = true
+mathjax_dollar_inline_enable = true
+repo_url = "https://github.com/not-matthias/apollo/tree/main/content/"
+fancy_code = false
+toc = true
+theme = "toggle"
+menu = [
+    {url = "/", name = "Home"},
+    {url = "/categories", name = "Categories"},
+    {url = "/tags", name = "Tags"},
+]
+socials = [
+  { name = "github", url = "https://github.com/kscr-rust/", icon = "github" },
+]
+insert_anchor_links = "heading"
+comment = true
+dynamic_note = true
+
+[extra.taxonomies]
+sort_by = "page_count"         # e.g. name, page_count
+reverse = true
+
+[extra.analytics]
+enabled = true
+
+[extra.analytics.goatcounter]
+user = "kscr"

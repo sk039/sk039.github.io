@@ -1,0 +1,124 @@
+<!doctype html><html class="dark light" lang=en><head><meta charset=UTF-8><meta content="IE=edge" http-equiv=X-UA-Compatible><meta content="width=device-width,initial-scale=1.0" name=viewport><meta content=https://kscr-rust.github.io name=base><title>
+            
+                在安卓中调用 rust 动态库
+            
+        </title><meta content="在安卓中调用 rust 动态库" property=og:title><link href=https://kscr-rust.github.io/fonts.css rel=stylesheet><link media="(prefers-color-scheme: dark)" href=/syntax-theme-dark.css rel=stylesheet><link media="(prefers-color-scheme: light)" href=/syntax-theme-light.css rel=stylesheet><script async data-goatcounter=https://kscr.goatcounter.com/count src=https://kscr-rust.github.io/js/count.js></script><noscript><img src="https://kscr.goatcounter.com//count?p=/rust/rust-on-android/&t=在安卓中调用 rust 动态库"></noscript><script defer src=https://kscr-rust.github.io/js/toc.js></script><script src=https://kscr-rust.github.io/js/note.js></script><script>MathJax = {
+              tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']]
+              }
+            };</script><script async id=MathJax-script src=https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js></script><link title="
+    kscr
+" href=https://kscr-rust.github.io/atom.xml rel=alternate type=application/atom+xml><link href=https://kscr-rust.github.io/theme/light.css rel=stylesheet><link href=https://kscr-rust.github.io/theme/dark.css id=darkModeStyle rel=stylesheet><script src=https://kscr-rust.github.io/js/themetoggle.js></script><script>setTheme(getSavedTheme());</script><link href=https://kscr-rust.github.io/main.css media=screen rel=stylesheet><script src="https://kscr-rust.github.io/js/searchElasticlunr.min.js?h=3626c0ef99daa745b31e" defer></script><body><div class=left-content></div><div class=content><nav><div class=left-nav><a href=https://kscr-rust.github.io>kscr</a><div class=socials><a class=social href=https://github.com/kscr-rust/ rel=me> <img alt=github src=https://kscr-rust.github.io/icons/social/github.svg> </a></div></div><div class=right-nav><a href=https://kscr-rust.github.io style=margin-right:.5em>Home</a><a href=https://kscr-rust.github.io/categories style=margin-right:.5em>Categories</a><a href=https://kscr-rust.github.io/tags style=margin-right:.5em>Tags</a><button title="$SHORTCUT to open search" class=search-button id=search-button><img alt=Search class=search-icon src=https://kscr-rust.github.io/icons/search.svg></button><div class="search-modal js" aria-labelledby=modalTitle id=searchModal role=dialog><div id=modal-content><h1 class=page-header id=modalTitle>Search</h1><div id=searchBar><input aria-controls=results-container aria-expanded=false autocomplete=off id=searchInput placeholder=Search... role=combobox spellcheck=false><button title="Clear search" class=clear-button id=clear-search><svg viewbox="0 -960 960 960" xmlns=http://www.w3.org/2000/svg><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></button></div><div id=results-container><div id=results-info><span id=zero_results style=display:none>No results</span><span id=one_result style=display:none>1 result</span><span id=many_results style=display:none>$NUMBER results</span></div><div id=results role=listbox></div></div></div></div><a onclick="toggleTheme(); event.preventDefault();" href=# id=dark-mode-toggle> <img alt=Light id=sun-icon src=https://kscr-rust.github.io/icons/sun.svg style=filter:invert()> <img alt=Dark id=moon-icon src=https://kscr-rust.github.io/icons/moon.svg> </a><script>updateItemToggleTheme()</script></div></nav><div data-selector="main article p" class=visible-element-observer-root><main><article><div class=title><div class=page-header>在安卓中调用 rust 动态库</div><div class=meta>Posted on <time>2022-08-28</time><span class=tags-label>::</span><span class=tags> <a class=post-tag href=https://kscr-rust.github.io/tags/an-zhuo/>安卓</a> <a class=post-tag href=https://kscr-rust.github.io/tags/android/>android</a> <a class=post-tag href=https://kscr-rust.github.io/tags/jni/>jni</a> </span></div></div><section class=body><h2 id=xiang-mu-jie-shao>项目介绍</h2><p>项目链接：https://github.com/martinwairegi/rustonandroid<p>文件结构：<pre class="language-bash z-code" data-lang=bash><code class=language-bash data-lang=bash><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">├──</span></span><span class="z-meta z-function-call z-arguments z-shell"> android          <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> 安卓相关代码</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">├──</span></span><span class="z-meta z-function-call z-arguments z-shell"> rust	     <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> rust 相关代码，调用 libgmp 库实现功能</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">├──</span></span><span class="z-meta z-function-call z-arguments z-shell"> build-all.sh     <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> 全局构建脚本</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">├──</span></span><span class="z-meta z-function-call z-arguments z-shell"> build-apk.sh     <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> 安卓 apk 编译构建脚本</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">├──</span></span><span class="z-meta z-function-call z-arguments z-shell"> build-librpn.sh  <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> rust 动态库构建脚本</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span></span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">└──</span></span><span class="z-meta z-function-call z-arguments z-shell"> build-libgmp.sh  <span class="z-comment z-line z-number-sign z-shell"><span class="z-punctuation z-definition z-comment z-begin z-shell">#</span></span><span class="z-comment z-line z-number-sign z-shell"> libgmp 构建脚本</span><span class="z-comment z-line z-number-sign z-shell">
+</span></span></span></code></pre><p>***注意：***此项目代码使用 NDK-r23+ 无法编译成功，需要打补丁（见文末）。<p>主要因为以下两个原因：<ol><li><p>NDK r23 之后 rust 编译报错 <code>ld: error: unable to find library -lgcc</code></p> <p>解决方法见：https://github.com/rust-lang/rust/pull/85806#issuecomment-1096266946</p><li><p>项目编码错误</p> <p>类名、函数名错误；编译脚本宏路径、名称错误。</p></ol><p>项目构建：<pre class="language-bash z-code" data-lang=bash><code class=language-bash data-lang=bash><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">$</span></span><span class="z-meta z-function-call z-arguments z-shell"> export ANDROID_SDK_ROOT=/opt/Android/Sdk/</span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">$</span></span><span class="z-meta z-function-call z-arguments z-shell"> export ANDROID_NDK_ROOT=/opt/Android/Sdk/ndk/23.1.7779620</span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">$</span></span><span class="z-meta z-function-call z-arguments z-shell"> export ANDROID_API=29</span>
+</span><span class="z-source z-shell z-bash"><span class="z-meta z-function-call z-shell"><span class="z-variable z-function z-shell">$</span></span><span class="z-meta z-function-call z-arguments z-shell"> ./build-all.sh</span>
+</span></code></pre><h2 id=zhi-shi-tuo-zhan>知识拓展</h2><p>rust 库编译可以使用 cargo-ndk 工具。<p>https://github.com/bbqsrc/cargo-ndk<h2 id=bu-ding>补丁</h2><pre class="language-diff z-code" data-lang=diff><code class=language-diff data-lang=diff><span class="z-source z-diff"><span class="z-meta z-diff z-header z-from-file"><span class="z-meta z-header z-from-file z-diff"><span class="z-punctuation z-definition z-from-file z-diff">---</span> a/build-libgmp.sh
+</span></span></span><span class="z-source z-diff"><span class="z-meta z-diff z-header z-to-file"><span class="z-meta z-header z-to-file z-diff"><span class="z-punctuation z-definition z-to-file z-diff">+++</span> b/build-libgmp.sh
+</span></span></span><span class="z-source z-diff"><span class="z-meta z-diff z-range z-unified"><span class="z-meta z-range z-unified z-diff"><span class="z-punctuation z-definition z-range z-diff">@@</span> <span class="z-meta z-toc-list z-line-number z-diff">-86,34 +86,34</span> <span class="z-punctuation z-definition z-range z-diff">@@</span> <span class="z-entity z-name z-section z-diff">fi</span>
+</span></span></span><span class="z-source z-diff"> # If the build directory does not exist, create it.
+</span><span class="z-source z-diff"> if [[ ! -d "${TARGET_DIR}" ]]; then
+</span><span class="z-source z-diff"> 	# If we don't have a local copy of the libgmp archive, download it.
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	if [[ ! -f "${BUILD_DIR}/gmp-${VERSION}.tar.lz" ]]; then
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>	if [[ ! -f "${BUILD_DIR}/gmp-${VERSION}.tar.xz" ]]; then
+</span></span><span class="z-source z-diff"> 		cd "${BUILD_DIR}"
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		curl --remote-name "https://gmplib.org/download/gmp/gmp-${VERSION}.tar.lz"
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>		curl --remote-name "https://gmplib.org/download/gmp/gmp-${VERSION}.tar.xz"
+</span></span><span class="z-source z-diff"> 	fi
+</span><span class="z-source z-diff"> 
+</span><span class="z-source z-diff"> 	# Extract the libgmp archive.
+</span><span class="z-source z-diff"> 	mkdir -p "${BUILD_DIR}/${ARCH}/${BUILD_MODE}"
+</span><span class="z-source z-diff"> 	cd "${BUILD_DIR}/${ARCH}/${BUILD_MODE}"
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	tar lxf "${BUILD_DIR}/gmp-${VERSION}.tar.lz"
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>	tar xf "${BUILD_DIR}/gmp-${VERSION}.tar.xz"
+</span></span><span class="z-source z-diff"> fi
+</span><span class="z-source z-diff"> 
+</span><span class="z-source z-diff"> # Set up the NDK tools for cross-compiling.
+</span><span class="z-source z-diff"> TOOLCHAIN="${ANDROID_NDK_ROOT}/toolchains/llvm/prebuilt/linux-x86_64/"
+</span><span class="z-source z-diff"> if [[ "${ARCH}" == "armv7" ]]; then
+</span><span class="z-source z-diff"> 	HOST="armv7a-linux-androideabi"
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	TOOL_PREFIX="${TOOLCHAIN}/bin/arm-linux-androideabi"
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>	TOOL_PREFIX="${TOOLCHAIN}/bin/"
+</span></span><span class="z-source z-diff"> else
+</span><span class="z-source z-diff"> 	HOST="${ARCH}-linux-android"
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	TOOL_PREFIX="${TOOLCHAIN}/bin/${HOST}"
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>	TOOL_PREFIX="${TOOLCHAIN}/bin/"
+</span></span><span class="z-source z-diff"> fi
+</span><span class="z-source z-diff"> COMPILER_PREFIX="${TOOLCHAIN}/bin/${HOST}${ANDROID_API}"
+</span><span class="z-source z-diff"> 
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>export AR="${TOOL_PREFIX}-ar"
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>export AS="${TOOL_PREFIX}-as"
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>export AR="${TOOL_PREFIX}llvm-ar"
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>export AS="${TOOL_PREFIX}llvm-as"
+</span></span><span class="z-source z-diff"> export CC="${COMPILER_PREFIX}-clang"
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>export LD="${TOOL_PREFIX}-ld"
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>export RANLIB="${TOOL_PREFIX}-ranlib"
+</span></span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>export STRIP="${TOOL_PREFIX}-strip"
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>export LD="${TOOL_PREFIX}ld"
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>export RANLIB="${TOOL_PREFIX}llvm-ranlib"
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>export STRIP="${TOOL_PREFIX}llvm-strip"
+</span></span><span class="z-source z-diff"> 
+</span><span class="z-source z-diff"> # Set up compiler flags.
+</span><span class="z-source z-diff"> if [[ "${BUILD_MODE}" == "release" ]]; then
+</span><span class="z-source z-diff">diff --git a/build-librpn.sh b/build-librpn.sh
+</span><span class="z-source z-diff">old mode 100644
+</span><span class="z-source z-diff">new mode 100755
+</span><span class="z-source z-diff">index a4730a4..509ba9a
+</span><span class="z-source z-diff"><span class="z-meta z-diff z-header z-from-file"><span class="z-meta z-header z-from-file z-diff"><span class="z-punctuation z-definition z-from-file z-diff">---</span> a/build-librpn.sh
+</span></span></span><span class="z-source z-diff"><span class="z-meta z-diff z-header z-to-file"><span class="z-meta z-header z-to-file z-diff"><span class="z-punctuation z-definition z-to-file z-diff">+++</span> b/build-librpn.sh
+</span></span></span><span class="z-source z-diff"><span class="z-meta z-diff z-range z-unified"><span class="z-meta z-range z-unified z-diff"><span class="z-punctuation z-definition z-range z-diff">@@</span> <span class="z-meta z-toc-list z-line-number z-diff">-88,12 +88,12</span> <span class="z-punctuation z-definition z-range z-diff">@@</span> <span class="z-entity z-name z-section z-diff">cd "$(dirname "${BASH_SOURCE[0]}")/rust/"</span>
+</span></span></span><span class="z-source z-diff"> TOOLCHAIN="${ANDROID_NDK_ROOT}/toolchains/llvm/prebuilt/linux-x86_64"
+</span><span class="z-source z-diff"> if [[ "${ARCH}" == "armv7" ]]; then
+</span><span class="z-source z-diff"> 	HOST="armv7a-linux-androideabi"
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	TOOL_PREFIX="${TOOLCHAIN}/bin/arm-linux-androideabi"
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>	TOOL_PREFIX="${TOOLCHAIN}/bin/"
+</span></span><span class="z-source z-diff"> 
+</span><span class="z-source z-diff"> 	RUST_TARGET="armv7-linux-androideabi"
+</span><span class="z-source z-diff"> else
+</span><span class="z-source z-diff"> 	HOST="${ARCH}-linux-android"
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	TOOL_PREFIX="${TOOLCHAIN}/bin/${HOST}"
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>	TOOL_PREFIX="${TOOLCHAIN}/bin/"
+</span></span><span class="z-source z-diff"> 
+</span><span class="z-source z-diff"> 	RUST_TARGET="${ARCH}-linux-android"
+</span><span class="z-source z-diff"> fi
+</span><span class="z-source z-diff"><span class="z-meta z-diff z-range z-unified"><span class="z-meta z-range z-unified z-diff"><span class="z-punctuation z-definition z-range z-diff">@@</span> <span class="z-meta z-toc-list z-line-number z-diff">-111,7 +111,7</span> <span class="z-punctuation z-definition z-range z-diff">@@</span> <span class="z-entity z-name z-section z-diff">fi</span>
+</span></span></span><span class="z-source z-diff"> #
+</span><span class="z-source z-diff"> # The RUSTFLAGS variable sets up the linking path (tells rustc where to look for dependencies).
+</span><span class="z-source z-diff"> env \
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>	"AR_${RUST_TARGET}=${TOOL_PREFIX}-ar" \
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>	"AR_${RUST_TARGET}=${TOOL_PREFIX}llvm-ar" \
+</span></span><span class="z-source z-diff"> 	"CC_${RUST_TARGET}=${COMPILER_PREFIX}-clang" \
+</span><span class="z-source z-diff"> 	"CARGO_TARGET_${RUST_TARGET_CAPS}_LINKER=${COMPILER_PREFIX}-clang" \
+</span><span class="z-source z-diff"> 	"RUSTFLAGS=-L ${LIBS_DIR}" \
+</span><span class="z-source z-diff">diff --git a/build/libgmp/gmp-6.2.1.tar.lz b/build/libgmp/gmp-6.2.1.tar.lz
+</span><span class="z-source z-diff">deleted file mode 100644
+</span><span class="z-source z-diff">index f02b412..0000000
+</span><span class="z-source z-diff">Binary files a/build/libgmp/gmp-6.2.1.tar.lz and /dev/null differ
+</span><span class="z-source z-diff">diff --git a/rust/src/android.rs b/rust/src/android.rs
+</span><span class="z-source z-diff">index 68d3883..a08efd0 100644
+</span><span class="z-source z-diff"><span class="z-meta z-diff z-header z-from-file"><span class="z-meta z-header z-from-file z-diff"><span class="z-punctuation z-definition z-from-file z-diff">---</span> a/rust/src/android.rs
+</span></span></span><span class="z-source z-diff"><span class="z-meta z-diff z-header z-to-file"><span class="z-meta z-header z-to-file z-diff"><span class="z-punctuation z-definition z-to-file z-diff">+++</span> b/rust/src/android.rs
+</span></span></span><span class="z-source z-diff"><span class="z-meta z-diff z-range z-unified"><span class="z-meta z-range z-unified z-diff"><span class="z-punctuation z-definition z-range z-diff">@@</span> <span class="z-meta z-toc-list z-line-number z-diff">-54,7 +54,7</span> <span class="z-punctuation z-definition z-range z-diff">@@</span> <span class="z-entity z-name z-section z-diff">where</span>
+</span></span></span><span class="z-source z-diff"> 	 * and hope for the best.
+</span><span class="z-source z-diff"> 	 */
+</span><span class="z-source z-diff"> 	let class = env
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>		.find_class("pl/svgames/blog/RustOnAndroid/Result")
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>		.find_class("pl/martin/blog/RustOnAndroid/Result")
+</span></span><span class="z-source z-diff"> 		.unwrap();
+</span><span class="z-source z-diff"> 	let args: [JValue&lt;'e>; 2] = [
+</span><span class="z-source z-diff"> 		JValue::Bool(u8::from(is_ok)),
+</span><span class="z-source z-diff"><span class="z-meta z-diff z-range z-unified"><span class="z-meta z-range z-unified z-diff"><span class="z-punctuation z-definition z-range z-diff">@@</span> <span class="z-meta z-toc-list z-line-number z-diff">-71,7 +71,7</span> <span class="z-punctuation z-definition z-range z-diff">@@</span> <span class="z-entity z-name z-section z-diff">fn rpn_wrapper(env: &JNIEnv, expression: JString) -> Result&lt;BigNum> {</span>
+</span></span></span><span class="z-source z-diff"> }
+</span><span class="z-source z-diff"> 
+</span><span class="z-source z-diff"> #[no_mangle]
+</span><span class="z-source z-diff"><span class="z-markup z-deleted z-diff"><span class="z-punctuation z-definition z-deleted z-diff">-</span>pub extern "system" fn Java_pl_svgames_blog_RustOnAndroid_RpnCalculator_rpn&lt;
+</span></span><span class="z-source z-diff"><span class="z-markup z-inserted z-diff"><span class="z-punctuation z-definition z-inserted z-diff">+</span>pub extern "system" fn Java_pl_martin_blog_RustOnAndroid_RpnCalculator_rpn&lt;
+</span></span><span class="z-source z-diff"> 	'e,
+</span><span class="z-source z-diff"> >(
+</span><span class="z-source z-diff"> 	env: JNIEnv&lt;'e>,
+</span></code></pre></section></article></main></div></div><div class=right-content><div class=toc><div class=heading>Table of Contents</div><ul class=toc-list><li class=parent><a href=https://kscr-rust.github.io/rust/rust-on-android/#xiang-mu-jie-shao>项目介绍</a><li class=parent><a href=https://kscr-rust.github.io/rust/rust-on-android/#zhi-shi-tuo-zhan>知识拓展</a><li class=parent><a href=https://kscr-rust.github.io/rust/rust-on-android/#bu-ding>补丁</a></ul></div></div>

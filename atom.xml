@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+    <title>kscr</title>
+    <link rel="self" type="application/atom+xml" href="https://kscr-rust.github.io/atom.xml"/>
+    <link rel="alternate" type="text/html" href="https://kscr-rust.github.io"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2025-09-23T00:00:00+00:00</updated>
+    <id>https://kscr-rust.github.io/atom.xml</id>
+    <entry xml:lang="en">
+        <title>grub添加devicetree支持</title>
+        <published>2025-09-23T00:00:00+00:00</published>
+        <updated>2025-09-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/grub-dtb/"/>
+        <id>https://kscr-rust.github.io/grub-dtb/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/grub-dtb/">&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;armbian&#x2F;build&#x2F;blob&#x2F;main&#x2F;packages&#x2F;blobs&#x2F;grub&#x2F;09_linux_with_dtb.sh
+https:&#x2F;&#x2F;github.com&#x2F;armbian&#x2F;build&#x2F;blob&#x2F;main&#x2F;extensions&#x2F;grub-with-dtb.sh&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; mv &#x2F;etc&#x2F;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Zero3W数据手册</title>
+        <published>2025-09-23T00:00:00+00:00</published>
+        <updated>2025-09-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/rockchip/radxa_zero3w/datasheet/"/>
+        <id>https://kscr-rust.github.io/rockchip/radxa_zero3w/datasheet/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/rockchip/radxa_zero3w/datasheet/">&lt;p&gt;原理图：&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;dl.radxa.com&#x2F;zero3&#x2F;docs&#x2F;hw&#x2F;3w&#x2F;radxa_zero_3w_v1110_schematic.pdf&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>rockchip启动流程</title>
+        <published>2025-09-23T00:00:00+00:00</published>
+        <updated>2025-09-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/rockchip/rockchip-boot/"/>
+        <id>https://kscr-rust.github.io/rockchip/rockchip-boot/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/rockchip/rockchip-boot/">&lt;p&gt;https:&#x2F;&#x2F;opensource.rock-chips.com&#x2F;wiki_Boot_option&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;kscr-rust.github.io&#x2F;rockchip&#x2F;rockchip-boot&#x2F;20250923140734.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;kscr-rust.github.io&#x2F;rockchip&#x2F;rockchip-boot&#x2F;20250923142247.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>使用tar备份还原系统</title>
+        <published>2025-09-23T00:00:00+00:00</published>
+        <updated>2025-09-23T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/tar-backup-system/"/>
+        <id>https://kscr-rust.github.io/tar-backup-system/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/tar-backup-system/">&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;wiki.archlinuxcn.org&#x2F;wiki&#x2F;%E4%BD%BF%E7%94%A8_tar_%E5%A4%87%E4%BB%BD%E6%95%B4%E4%B8%AA%E7%B3%BB%E7%BB%9F&quot;&gt;使用_tar_备份整个系统&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; -p、--acls 和 --xattrs 存储所有权限、ACL 和扩展属性。如果没有这些属性，许多程序会停止工作！&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; tar&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;&#x2F;span&gt;acls&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;&#x2F;span&gt;xattrs&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;cpf&lt;&#x2F;span&gt; bak-rootfs.tar.gz &#x2F;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>提交补丁到 Linux 内核社区</title>
+        <published>2022-09-14T00:00:00+00:00</published>
+        <updated>2022-09-14T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/submitting-patches/"/>
+        <id>https://kscr-rust.github.io/submitting-patches/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/submitting-patches/">&lt;p&gt;https:&#x2F;&#x2F;static.lwn.net&#x2F;kerneldoc&#x2F;translations&#x2F;zh_CN&#x2F;process&#x2F;submitting-patches.html&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>ebpf 学习笔记</title>
+        <published>2022-09-05T00:00:00+00:00</published>
+        <updated>2022-09-05T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/ebpf-notes/"/>
+        <id>https://kscr-rust.github.io/ebpf-notes/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/ebpf-notes/">&lt;h2 id=&quot;jie-shao&quot;&gt;介绍&lt;&#x2F;h2&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;kscr-rust.github.io&#x2F;ebpf-notes&#x2F;62831cc15717714b077372c9bcce12e71dfa78.png&quot; alt=&quot;ebpf架构&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;深入浅出eBPF｜你要了解的七个核心问题：&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;www.51cto.com&#x2F;article&#x2F;711018.html&lt;&#x2F;p&gt;
+&lt;p&gt;eBPF 系列一：Hello eBPF&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;vvl.me&#x2F;2021&#x2F;01&#x2F;eBPF-1-Hello-eBPF&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;BPF之路一bpf系统调用&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;www.anquanke.com&#x2F;post&#x2F;id&#x2F;263803&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ebpf-cheng-xu-zhong-xiang-yong-hu-tai-cheng-xu-chuan-di-xin-xi&quot;&gt;eBPF 程序中向用户态程序传递信息&lt;&#x2F;h2&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;bpf_trace_printk()&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;code&gt;bpf_trace_printk&lt;&#x2F;code&gt; 是一个 BPF 的辅助函数, 其作用是打印输出，由于运行在内核中，所以打印输出并不是标准输出，而是内核调试文件 &lt;code&gt;&#x2F;sys&#x2F;kernel&#x2F;debug&#x2F;tracing&#x2F;trace_pipe&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&amp;lt;eBPF-2-实战之编程接口、bcc与bpftrace&amp;gt; lesson1: hello word&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;blog.csdn.net&#x2F;weixin_43988498&#x2F;article&#x2F;details&#x2F;125113777&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;map&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;BPF 进阶笔记（二）：BPF Map 类型详解：使用场景、程序示例&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;arthurchiao.art&#x2F;blog&#x2F;bpf-advanced-notes-2-zh&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;eBPF 系列三：eBPF map&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;vvl.me&#x2F;2021&#x2F;02&#x2F;eBPF-3-eBPF-map&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;strong&gt;BPF ring buffer&lt;&#x2F;strong&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;nakryiko.com&#x2F;posts&#x2F;bpf-ringbuf&#x2F;#bpf-ringbuf-vs-bpf-perfbuf&lt;&#x2F;p&gt;
+&lt;p&gt;边缘网络 eBPF 超能力：eBPF map 原理与性能解析&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;segmentfault.com&#x2F;a&#x2F;1190000041224609&lt;&#x2F;p&gt;
+&lt;p&gt;map 性能建议：&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;一般来说 eBPF 程序作为数据面更多是查询，常用的 map 的查询性能：array &amp;gt; percpu array &amp;gt; hash &amp;gt; percpu hash &amp;gt; lru hash &amp;gt; lpm。map 查询对 eBPF 性能有不少的影响，比如：lpm 类型 map 的查询在我们测试发现最大影响 20% 整体性能、lru hash 类型 map 查询影响 10%。
+特别注意，array 的查询性能比 percpu array 更好，hash 的查询性能也比 percpu hash 更好，这是由于 array 和 hash 的 lookup helper 层面在内核有更多的优化。对于数据面读多写少情况下，使用 array 比 percpu array 更优（hash、percpu hash 同理），而对于需要数据面写数据的情况使用 percpu 更优，比如统计计数。&lt;&#x2F;li&gt;
+&lt;li&gt;尽可能在一个 map 中查询到更多的数据，减少 map 查询次数。&lt;&#x2F;li&gt;
+&lt;li&gt;尽可能使用 array map，在控制面实现更复杂的逻辑，如分配一个 index，将一些 hash map 查询转换为 array map 查询。&lt;&#x2F;li&gt;
+&lt;li&gt;eBPF map 也可以指定 numa 创建，另外不同类型的 map 也会有一些额外的 flags 可以用来调整特性，比如：lru hash map 有 no_common_lru 选项来优化写入性能。&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;揭秘 BPF map 前生今世&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;www.ebpf.top&#x2F;post&#x2F;map_internal&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;kscr-rust.github.io&#x2F;ebpf-notes&#x2F;map_load_process.png&quot; alt=&quot;map 加载流程&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>AOSP笔记</title>
+        <published>2022-08-30T00:00:00+00:00</published>
+        <updated>2022-08-30T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/aosp/"/>
+        <id>https://kscr-rust.github.io/aosp/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/aosp/">&lt;h2 id=&quot;tu-xing-zi-xi-tong&quot;&gt;图形子系统&lt;&#x2F;h2&gt;
+&lt;p&gt;Android 图形系统框架简介&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;segmentfault.com&#x2F;a&#x2F;1190000022114641&lt;&#x2F;p&gt;
+&lt;p&gt;如何用Rust做Android UI渲染&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;tehub.com&#x2F;a&#x2F;8xvC7q4Nd1&lt;&#x2F;p&gt;
+&lt;p&gt;Android 系统图形栈（一）： OpenGL ES 和 EGL 介绍&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;flyflypeng.tech&#x2F;android&#x2F;2017&#x2F;09&#x2F;04&#x2F;Android%E7%B3%BB%E7%BB%9F%E5%9B%BE%E5%BD%A2%E6%A0%88OpenGLES%E5%92%8CEGL%E4%BB%8B%E7%BB%8D.html&lt;&#x2F;p&gt;
+&lt;p&gt;Android 系统图形栈（二）：OpenGL ES 库和 EGL 库加载过程&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;flyflypeng.tech&#x2F;android&#x2F;2017&#x2F;09&#x2F;05&#x2F;Android%E7%B3%BB%E7%BB%9F%E5%9B%BE%E5%BD%A2%E6%A0%88OpenGLES%E5%92%8CEGL%E5%BA%93%E7%9A%84%E5%8A%A0%E8%BD%BD%E8%BF%87%E7%A8%8B.html&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;halceng&quot;&gt;HAL层&lt;&#x2F;h2&gt;
+&lt;p&gt;https:&#x2F;&#x2F;flyflypeng.tech&#x2F;android&#x2F;2017&#x2F;03&#x2F;26&#x2F;Android-HAL%E5%B1%82%E5%8E%9F%E7%90%86%E5%88%86%E6%9E%90.html&lt;&#x2F;p&gt;
+&lt;p&gt;Android HAL 层原理分析&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;rust-on-android&quot;&gt;Rust on Android&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;can-kao-zi-liao&quot;&gt;参考资料&lt;&#x2F;h3&gt;
+&lt;p&gt;https:&#x2F;&#x2F;source.android.com&#x2F;docs&#x2F;setup&#x2F;build&#x2F;rust&#x2F;building-rust-modules&#x2F;overview&lt;&#x2F;p&gt;
+&lt;p&gt;Android Rust&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;blog.logrocket.com&#x2F;integrating-rust-module-android-app&#x2F;#rust&lt;&#x2F;p&gt;
+&lt;p&gt;例子：&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;atkurtul&#x2F;AndroidVulkanTriangle.git&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;sk039&#x2F;rustonandroid.git&lt;&#x2F;p&gt;
+&lt;p&gt;Integrating a Rust module into an Android app&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;medium.com&#x2F;visly&#x2F;rust-on-android-19f34a2fb43 Rust on Android&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;cargo-ndk&quot;&gt;cargo-ndk&lt;&#x2F;h3&gt;
+&lt;p&gt;https:&#x2F;&#x2F;lib.rs&#x2F;crates&#x2F;cargo-ndk&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; CARGO_ENCODED_RUSTFLAGS=&lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;-L&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;PWD&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;..&#x2F;build&#x2F;libs&#x2F;debug&#x2F;aarch64&#x2F;&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; cargo ndk&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;t&lt;&#x2F;span&gt; arm64-v8a&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;o&lt;&#x2F;span&gt; .&#x2F;jniLibs build&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;注意：&lt;code&gt;-L&lt;&#x2F;code&gt; 与后面路径不能有空格&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;cargo-apk&quot;&gt;cargo-apk&lt;&#x2F;h3&gt;
+&lt;p&gt;https:&#x2F;&#x2F;lib.rs&#x2F;crates&#x2F;cargo-apk&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;a13-kvm&quot;&gt;a13 kvm&lt;&#x2F;h2&gt;
+&lt;p&gt;https:&#x2F;&#x2F;blog.esper.io&#x2F;android-dessert-bites-5-virtualization-in-android-13-351789&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;How Google will use virtualization in Android 13&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;android.googlesource.com&#x2F;platform&#x2F;packages&#x2F;modules&#x2F;Virtualization&#x2F;+&#x2F;HEAD&#x2F;docs&#x2F;getting_started&#x2F;index.md&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;qi-ta&quot;&gt;其他&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;anbox&quot;&gt;Anbox&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;ffmpeg&quot;&gt;ffmpeg&lt;&#x2F;h3&gt;
+&lt;p&gt;Android绘制流程 —— View、Window、SurfaceFlinger&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;juejin.cn&#x2F;post&#x2F;6899010578145411085&lt;&#x2F;p&gt;
+&lt;p&gt;Android之Surface&#x2F;Window&#x2F;View&#x2F;SurfaceView区别&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;blog.csdn.net&#x2F;u010164190&#x2F;article&#x2F;details&#x2F;119489616&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;developer.android.com&#x2F;ndk&#x2F;reference&#x2F;group&#x2F;native-activity#group___native_activity_1ga774d0a87ec496b3940fcddccbc31fd9d&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;HausnerR&#x2F;ffmpeg-android-example&lt;&#x2F;p&gt;
+&lt;p&gt;一文读懂 Android FFmpeg 视频解码过程与实战分析&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;www.51cto.com&#x2F;article&#x2F;704012.html&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Alacritty: OpenGL terminal emulator</title>
+        <published>2022-08-28T00:00:00+00:00</published>
+        <updated>2022-08-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/alacritty/"/>
+        <id>https://kscr-rust.github.io/alacritty/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/alacritty/">&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;alacritty&#x2F;alacritty&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;wiki.archlinux.org&#x2F;title&#x2F;Alacritty&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;catcat.cc&#x2F;post&#x2F;2020-10-31&#x2F; Linux fontconfig 的字体匹配机制&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>掌握 Android 图像显示原理</title>
+        <published>2022-08-28T00:00:00+00:00</published>
+        <updated>2022-08-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/android-graphical/"/>
+        <id>https://kscr-rust.github.io/android-graphical/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/android-graphical/">&lt;p&gt;掌握Android图像显示原理（上）&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;blog.csdn.net&#x2F;tyuiof&#x2F;article&#x2F;details&#x2F;108434845&lt;&#x2F;p&gt;
+&lt;p&gt;掌握Android图像显示原理中 (一)&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;juejin.cn&#x2F;post&#x2F;6877071747145793543&lt;&#x2F;p&gt;
+&lt;p&gt;掌握Android图像显示原理中（二）&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;juejin.cn&#x2F;post&#x2F;6877072252970483720&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>设置 Cargo 默认 target triple</title>
+        <published>2022-08-28T00:00:00+00:00</published>
+        <updated>2022-08-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/cargo-set-default-target/"/>
+        <id>https://kscr-rust.github.io/cargo-set-default-target/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/cargo-set-default-target/">&lt;p&gt;解决 rust-analyzer 因为 target 不匹配而无法正确使用的问题。&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;方法一： config.toml
+源码（Cargo.toml 同级）目录下，创建 &lt;code&gt;.cargo&#x2F;config.toml&lt;&#x2F;code&gt; ：&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;toml&quot; class=&quot;language-toml z-code&quot;&gt;&lt;code class=&quot;language-toml&quot; data-lang=&quot;toml&quot;&gt;&lt;span class=&quot;z-source z-toml&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-table z-begin z-toml&quot;&gt;[&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-tag z-table z-toml&quot;&gt;&lt;span class=&quot;z-entity z-name z-table z-toml&quot;&gt;build&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-table z-end z-toml&quot;&gt;]&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-toml&quot;&gt;&lt;span class=&quot;z-meta z-tag z-key z-toml&quot;&gt;&lt;span class=&quot;z-entity z-name z-tag z-toml&quot;&gt;target&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-key-value z-toml&quot;&gt;=&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-double z-basic z-toml&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-toml&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;aarch64-linux-android&lt;span class=&quot;z-punctuation z-definition z-string z-end z-toml&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;https:&#x2F;&#x2F;doc.rust-lang.org&#x2F;cargo&#x2F;reference&#x2F;config.html&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;方法二：CARGO_BUILD_TARGET 环境变量&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-storage z-modifier z-shell&quot;&gt;export&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-assignment z-shell&quot;&gt;CARGO_BUILD_TARGET&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-shell&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-unquoted z-shell&quot;&gt;aarch64-linux-android&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;https:&#x2F;&#x2F;doc.rust-lang.org&#x2F;cargo&#x2F;reference&#x2F;environment-variables.html&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>构建命令行IDE：nvim、coc、ccls</title>
+        <published>2022-08-28T00:00:00+00:00</published>
+        <updated>2022-08-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/nvim-ccls-build/"/>
+        <id>https://kscr-rust.github.io/nvim-ccls-build/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/nvim-ccls-build/">&lt;p&gt;Dockerfile:&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;dockerfile&quot; class=&quot;language-dockerfile z-code&quot;&gt;&lt;code class=&quot;language-dockerfile&quot; data-lang=&quot;dockerfile&quot;&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;&lt;span class=&quot;z-keyword z-control z-dockerfile&quot;&gt;FROM&lt;&#x2F;span&gt; ubuntu:&lt;span class=&quot;z-entity z-name z-enum z-tag-digest&quot;&gt;20.04&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-control z-dockerfile&quot;&gt;AS&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-stage-name&quot;&gt;build&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;&lt;span class=&quot;z-keyword z-control z-dockerfile&quot;&gt;COPY&lt;&#x2F;span&gt; sources.list &#x2F;etc&#x2F;apt&#x2F;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;&lt;span class=&quot;z-keyword z-control z-dockerfile&quot;&gt;RUN &lt;&#x2F;span&gt;apt-get update &amp;amp;&amp;amp; DEBIAN_FRONTEND=noninteractive TZ=Asia&#x2F;Shanghai apt-get install -y libclang-10-dev clang-10 clang libz-dev cmake gcc g++ git
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;&lt;span class=&quot;z-keyword z-control z-dockerfile&quot;&gt;RUN &lt;&#x2F;span&gt;git clone https:&#x2F;&#x2F;github.com&#x2F;MaskRay&#x2F;ccls &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;	    cd ccls &amp;amp;&amp;amp; git submodule init &amp;amp;&amp;amp; git submodule update &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;	    cmake -H. -BRelease -DCMAKE_BUILD_TYPE=Release &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;	    cmake --build Release -- install
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;&lt;span class=&quot;z-keyword z-control z-dockerfile&quot;&gt;FROM&lt;&#x2F;span&gt; ubuntu:&lt;span class=&quot;z-entity z-name z-enum z-tag-digest&quot;&gt;20.04&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;&lt;span class=&quot;z-keyword z-control z-dockerfile&quot;&gt;COPY&lt;&#x2F;span&gt; --from=&lt;span class=&quot;z-variable z-stage-name&quot;&gt;build&lt;&#x2F;span&gt; &#x2F;usr&#x2F;local&#x2F;bin&#x2F;ccls &#x2F;usr&#x2F;bin&#x2F;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;&lt;span class=&quot;z-keyword z-control z-dockerfile&quot;&gt;COPY&lt;&#x2F;span&gt; sources.list &#x2F;etc&#x2F;apt&#x2F;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;&lt;span class=&quot;z-keyword z-control z-dockerfile&quot;&gt;RUN &lt;&#x2F;span&gt; apt-get update &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;	    DEBIAN_FRONTEND=noninteractive TZ=Asia&#x2F;Shanghai \
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;	    apt-get install -y make gcc git libllvm10 ca-certificates gnupg curl
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;&lt;span class=&quot;z-keyword z-control z-dockerfile&quot;&gt;RUN &lt;&#x2F;span&gt;echo &lt;span class=&quot;z-string z-quoted z-double z-dockerfile&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-dockerfile&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;deb https:&#x2F;&#x2F;ppa.launchpadcontent.net&#x2F;neovim-ppa&#x2F;unstable&#x2F;ubuntu focal main&lt;span class=&quot;z-punctuation z-definition z-string z-end z-dockerfile&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &amp;gt;&amp;gt; &#x2F;etc&#x2F;apt&#x2F;sources.list &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;	    echo &lt;span class=&quot;z-string z-quoted z-double z-dockerfile&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-dockerfile&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;deb https:&#x2F;&#x2F;deb.nodesource.com&#x2F;node_16.x focal main&lt;span class=&quot;z-punctuation z-definition z-string z-end z-dockerfile&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &amp;gt;&amp;gt; &#x2F;etc&#x2F;apt&#x2F;sources.list &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;	    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 55F96FCF8231B6DD &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;	    apt-key adv --keyserver keyserver.ubuntu.com --recv-keys 1655A0AB68576280 &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;	    apt-get update &amp;amp;&amp;amp; \
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-dockerfile&quot;&gt;	    DEBIAN_FRONTEND=noninteractive TZ=Asia&#x2F;Shanghai apt-get install -y neovim nodejs cscope ctags
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;sources.list:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;deb http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; focal main restricted universe multiverse
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;deb http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; focal-security main restricted universe multiverse
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;deb http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; focal-updates main restricted universe multiverse
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;deb http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; focal-proposed main restricted universe multiverse
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;deb http:&#x2F;&#x2F;mirrors.aliyun.com&#x2F;ubuntu&#x2F; focal-backports main restricted universe multiverse
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;https:&#x2F;&#x2F;serverfault.com&#x2F;questions&#x2F;949991&#x2F;how-to-install-tzdata-on-a-ubuntu-docker-image&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;MaskRay&#x2F;ccls&#x2F;wiki&#x2F;Build&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;askubuntu.com&#x2F;questions&#x2F;291035&#x2F;how-to-add-a-gpg-key-to-the-apt-sources-keyring&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;neoclide&#x2F;coc.nvim&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;computingforgeeks.com&#x2F;how-to-install-node-js-on-ubuntu-debian&#x2F;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>使用 Rust 构建原生安卓应用（NDK、Vulkan）</title>
+        <published>2022-08-28T00:00:00+00:00</published>
+        <updated>2022-08-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/rust/rust-android-native-app/"/>
+        <id>https://kscr-rust.github.io/rust/rust-android-native-app/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/rust/rust-android-native-app/">&lt;h2 id=&quot;xiang-mu-jie-shao&quot;&gt;项目介绍&lt;&#x2F;h2&gt;
+&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;atkurtul&#x2F;AndroidVulkanTriangle.git&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;em&gt;&lt;strong&gt;注意：&lt;&#x2F;strong&gt;&lt;&#x2F;em&gt; 运行此项目需要打上文末补丁。&lt;&#x2F;p&gt;
+&lt;p&gt;主要修改：&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;rust 动态库构建改用 cargo-ndk&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;去除 Vulkan Validation Layer 相关函数调用&lt;&#x2F;p&gt;
+&lt;p&gt;因为新版本 NDK 已不集成相关二进制 so 文件，此功能是用来调试，去除它不影响项目演示。&lt;&#x2F;p&gt;
+&lt;p&gt;Vulkan Tutorial 04 理解Validation layers：&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;www.cnblogs.com&#x2F;heitao&#x2F;p&#x2F;6903297.html&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;构建方法：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; 安装 apk 构建依赖&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; sudo apt install aapt zipalign&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; 编译 rust 动态库&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; .&#x2F;build.sh&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; 构建 apk&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; .&#x2F;package.sh&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;bu-ding&quot;&gt;补丁&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;diff&quot; class=&quot;language-diff z-code&quot;&gt;&lt;code class=&quot;language-diff&quot; data-lang=&quot;diff&quot;&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;diff --git a&#x2F;build.sh b&#x2F;build.sh
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;index 8fa5923..fd3918e 100755
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-header z-from-file&quot;&gt;&lt;span class=&quot;z-meta z-header z-from-file z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-from-file z-diff&quot;&gt;---&lt;&#x2F;span&gt; a&#x2F;build.sh
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-header z-to-file&quot;&gt;&lt;span class=&quot;z-meta z-header z-to-file z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-to-file z-diff&quot;&gt;+++&lt;&#x2F;span&gt; b&#x2F;build.sh
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-range z-unified&quot;&gt;&lt;span class=&quot;z-meta z-range z-unified z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-toc-list z-line-number z-diff&quot;&gt;-1,2 +1,3&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;cargo build --target x86_64-linux-android --release
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;#cargo build --target aarch64-linux-android --release
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;\ No newline at end of file
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;#cargo build --target x86_64-linux-android --release
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;CARGO_ENCODED_RUSTFLAGS=&amp;quot;-landroid&amp;quot; cargo ndk -t arm64-v8a -p 30 -o .&#x2F;jniLibs build
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;#cargo build --target aarch64-linux-android --release
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;diff --git a&#x2F;package.sh b&#x2F;package.sh
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;index bcf457e..6e8d104 100755
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-header z-from-file&quot;&gt;&lt;span class=&quot;z-meta z-header z-from-file z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-from-file z-diff&quot;&gt;---&lt;&#x2F;span&gt; a&#x2F;package.sh
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-header z-to-file&quot;&gt;&lt;span class=&quot;z-meta z-header z-to-file z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-to-file z-diff&quot;&gt;+++&lt;&#x2F;span&gt; b&#x2F;package.sh
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-range z-unified&quot;&gt;&lt;span class=&quot;z-meta z-range z-unified z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-toc-list z-line-number z-diff&quot;&gt;-1,19 +1,21&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;ARCH=x86_64
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;ARCH=arm64-v8a
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; RARCH=$ARCH
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; mkdir -p apk&#x2F;libs&#x2F;lib&#x2F;$ARCH
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; SONAME=$(grep android.app.lib_name AndroidManifest.xml | grep -oP &amp;#39;android:value=&amp;quot;\K(.*)&amp;quot;&amp;#39;)
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; OUT=&amp;quot;apk&#x2F;libs&#x2F;lib&#x2F;$ARCH&#x2F;lib&amp;quot;${SONAME%\&amp;quot;}&amp;quot;.so&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;cp target&#x2F;$RARCH-linux-android&#x2F;release&#x2F;librust_vk_main.so $OUT
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;#cp target&#x2F;$RARCH-linux-android&#x2F;release&#x2F;librust_vk_main.so $OUT
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;cp jniLibs&#x2F;arm64-v8a&#x2F;librust_vk_main.so $OUT
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;readelf $OUT -d &amp;gt; sym.txt
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;readelf $OUT -s &amp;gt;&amp;gt; sym.txt
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;#readelf $OUT -d &amp;gt; sym.txt
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;#readelf $OUT -s &amp;gt;&amp;gt; sym.txt
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; VALIDATION_LAYER=$ANDROID_NDK_HOME&#x2F;sources&#x2F;third_party&#x2F;vulkan&#x2F;src&#x2F;build-android&#x2F;jniLibs&#x2F;$ARCH&#x2F;libVkLayer_khronos_validation.so
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;cp $VALIDATION_LAYER apk&#x2F;libs&#x2F;lib&#x2F;$ARCH
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;#cp $VALIDATION_LAYER apk&#x2F;libs&#x2F;lib&#x2F;$ARCH
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; aapt package -f -M AndroidManifest.xml -I $ANDROID_SDK_ROOT&#x2F;platforms&#x2F;android-30&#x2F;android.jar -A assets -F apk&#x2F;app0.apk apk&#x2F;libs
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; zipalign -f -v 4 apk&#x2F;app0.apk apk&#x2F;app.apk
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;signapk.sh apk&#x2F;app.apk
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;apkanalyzer files list apk&#x2F;app.apk
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;#signapk.sh apk&#x2F;app.apk
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;jarsigner -verbose -keystore ~&#x2F;.android&#x2F;debug.keystore apk&#x2F;app.apk androiddebugkey
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;#apkanalyzer files list apk&#x2F;app.apk
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; #adb uninstall com.native_activity
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; #adb install apk&#x2F;app.apk
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; #adb logcat -c
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;diff --git a&#x2F;src&#x2F;build.rs b&#x2F;src&#x2F;build.rs
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;index 26a2f05..ed71e8a 100644
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-header z-from-file&quot;&gt;&lt;span class=&quot;z-meta z-header z-from-file z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-from-file z-diff&quot;&gt;---&lt;&#x2F;span&gt; a&#x2F;src&#x2F;build.rs
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-header z-to-file&quot;&gt;&lt;span class=&quot;z-meta z-header z-to-file z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-to-file z-diff&quot;&gt;+++&lt;&#x2F;span&gt; b&#x2F;src&#x2F;build.rs
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-range z-unified&quot;&gt;&lt;span class=&quot;z-meta z-range z-unified z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-toc-list z-line-number z-diff&quot;&gt;-6,10 +6,10&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-entity z-name z-section z-diff&quot;&gt;fn main() {&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;     let target = env::vars().find_map(|(k, v)| if k == &amp;quot;TARGET&amp;quot; { Some(v) } else { None }).unwrap();
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;     let toolchain = env::vars().find_map(|(k, v)| if k == &amp;quot;ANDROID_TOOLCHAIN&amp;quot; { Some(v) } else { None }).unwrap();
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;     let compiler = toolchain.clone() + &amp;quot;&#x2F;bin&#x2F;&amp;quot; + target.as_str() + &amp;quot;30-clang&amp;quot;;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;    let ar =  toolchain + &amp;quot;&#x2F;bin&#x2F;&amp;quot; + target.as_str() + &amp;quot;-ar&amp;quot;;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;    let ar =  toolchain + &amp;quot;&#x2F;bin&#x2F;llvm-ar&amp;quot;;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;     cc::Build::new()
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;         .file(&amp;quot;src&#x2F;vk.c&amp;quot;)
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;         .compiler(compiler)
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;         .archiver(ar)
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;         .compile(&amp;quot;libvk.a&amp;quot;);
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;\ No newline at end of file
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;}
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;diff --git a&#x2F;src&#x2F;lib.rs b&#x2F;src&#x2F;lib.rs
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;index 05479d6..b85bbd1 100644
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-header z-from-file&quot;&gt;&lt;span class=&quot;z-meta z-header z-from-file z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-from-file z-diff&quot;&gt;---&lt;&#x2F;span&gt; a&#x2F;src&#x2F;lib.rs
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-header z-to-file&quot;&gt;&lt;span class=&quot;z-meta z-header z-to-file z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-to-file z-diff&quot;&gt;+++&lt;&#x2F;span&gt; b&#x2F;src&#x2F;lib.rs
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-range z-unified&quot;&gt;&lt;span class=&quot;z-meta z-range z-unified z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-toc-list z-line-number z-diff&quot;&gt;-32,7 +32,7&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-entity z-name z-section z-diff&quot;&gt;fn rust_main(msg: mpsc::Receiver&amp;lt;MainThreadMsg&amp;gt;) {&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;     a_log(&amp;quot;inside rust main&amp;quot;.to_owned());
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;     let instance = create_instance(
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;         &amp;amp;InstanceCreateInfo::new()
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;            .enabled_layer_name(&amp;amp;&amp;quot;VK_LAYER_KHRONOS_validation\0&amp;quot;.as_ptr())
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;            &#x2F;&#x2F;.enabled_layer_name(&amp;amp;&amp;quot;VK_LAYER_KHRONOS_validation\0&amp;quot;.as_ptr())
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;             .enabled_extension_names(&amp;amp;[
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;                 &amp;quot;VK_KHR_surface\0&amp;quot;.as_ptr(),
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;                 &amp;quot;VK_KHR_android_surface\0&amp;quot;.as_ptr(),
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-range z-unified&quot;&gt;&lt;span class=&quot;z-meta z-range z-unified z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-toc-list z-line-number z-diff&quot;&gt;-45,7 +45,7&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-entity z-name z-section z-diff&quot;&gt;fn rust_main(msg: mpsc::Receiver&amp;lt;MainThreadMsg&amp;gt;) {&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;         .create(
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;             &amp;amp;DeviceCreateInfo::new()
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;                 .enabled_extension_name(&amp;amp;&amp;quot;VK_KHR_swapchain\0&amp;quot;.as_ptr())
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;                .enabled_layer_name(&amp;amp;&amp;quot;VK_LAYER_KHRONOS_validation\0&amp;quot;.as_ptr())
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;               &#x2F;&#x2F; .enabled_layer_name(&amp;amp;&amp;quot;VK_LAYER_KHRONOS_validation\0&amp;quot;.as_ptr())
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;                 .queue_create_info(&amp;amp;DeviceQueueCreateInfo::new().queue_priority(&amp;amp;1f32)),
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;         )
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;         .unwrap();
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Rust：在 Android 上调用 Skia 绘制</title>
+        <published>2022-08-28T00:00:00+00:00</published>
+        <updated>2022-08-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/rust/rust-android-skia/"/>
+        <id>https://kscr-rust.github.io/rust/rust-android-skia/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/rust/rust-android-skia/">&lt;p&gt;NDK（C++）使用 Skia （OpenGLES后端）&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;ngocdaothanh&#x2F;SkiaOpenGLESAndroid&lt;&#x2F;p&gt;
+&lt;p&gt;JNI Skia （NewRasterDirect Bitmap）&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;chromium.googlesource.com&#x2F;skia&#x2F;+&#x2F;chrome&#x2F;m49&#x2F;platform_tools&#x2F;android&#x2F;examples&#x2F;hello_skia_app&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;NDK-SAMPLES 使用 OpenGL ES&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;android&#x2F;ndk-samples&#x2F;blob&#x2F;main&#x2F;teapots&#x2F;classic-teapot&#x2F;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>如何用Rust做Android UI渲染</title>
+        <published>2022-08-28T00:00:00+00:00</published>
+        <updated>2022-08-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/rust/rust-android-ui/"/>
+        <id>https://kscr-rust.github.io/rust/rust-android-ui/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/rust/rust-android-ui/">&lt;p&gt;https:&#x2F;&#x2F;juejin.cn&#x2F;post&#x2F;7002778072348885000&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bei-jing&quot;&gt;背景&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;rust-uixuan-ran&quot;&gt;Rust UI渲染&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;ruan-jian-hui-zhi&quot;&gt;软件绘制&lt;&#x2F;h3&gt;
+&lt;h3 id=&quot;ying-jian-hui-zhi&quot;&gt;硬件绘制&lt;&#x2F;h3&gt;
+&lt;h2 id=&quot;zong-jie&quot;&gt;总结&lt;&#x2F;h2&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Rust内核</title>
+        <published>2022-08-28T00:00:00+00:00</published>
+        <updated>2022-08-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/rust/rust-kernel/"/>
+        <id>https://kscr-rust.github.io/rust/rust-kernel/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/rust/rust-kernel/">&lt;p&gt;https:&#x2F;&#x2F;os.phil-opp.com&#x2F;zh-CN&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;rust-embedded&#x2F;rust-raspberrypi-OS-tutorials&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Rust笔记</title>
+        <published>2022-08-28T00:00:00+00:00</published>
+        <updated>2022-08-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/rust/rust-notes/"/>
+        <id>https://kscr-rust.github.io/rust/rust-notes/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/rust/rust-notes/">&lt;h1 id=&quot;rust&quot;&gt;rust&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;ji-chu-zhi-shi&quot;&gt;基础知识&lt;&#x2F;h2&gt;
+&lt;p&gt;Rust 程序设计语言 中文版：https:&#x2F;&#x2F;kaisery.github.io&#x2F;trpl-zh-cn&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;通过例子学Rust 中文版：https:&#x2F;&#x2F;rustwiki.org&#x2F;zh-CN&#x2F;rust-by-example&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;Rust设计模式：http:&#x2F;&#x2F;chuxiuhong.com&#x2F;chuxiuhong-rust-patterns-zh&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;Rust语言圣经：https:&#x2F;&#x2F;course.rs  https:&#x2F;&#x2F;github.com&#x2F;sunface&#x2F;rust-course&lt;&#x2F;p&gt;
+&lt;p&gt;Rust Crates 实践指南：https:&#x2F;&#x2F;mirrors.gitcode.host&#x2F;zzy&#x2F;rust-crate-guide&#x2F;index.html&lt;&#x2F;p&gt;
+&lt;p&gt;Cargo 手册：https:&#x2F;&#x2F;rustwiki.org&#x2F;zh-CN&#x2F;cargo&#x2F;index.html&lt;&#x2F;p&gt;
+&lt;p&gt;Rust的 Pin 与 Unpin ：https:&#x2F;&#x2F;folyd.com&#x2F;blog&#x2F;rust-pin-unpin&#x2F;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;hong-bian-cheng&quot;&gt;宏编程&lt;&#x2F;h3&gt;
+&lt;p&gt;Rust宏小册：https:&#x2F;&#x2F;zjp-cn.github.io&#x2F;tlborm&#x2F;proc-macros&lt;&#x2F;p&gt;
+&lt;p&gt;Rust过程宏（Procedural Macros）基础：https:&#x2F;&#x2F;cloud.tencent.com&#x2F;developer&#x2F;article&#x2F;1832788&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;yi-bu-bian-cheng&quot;&gt;异步编程&lt;&#x2F;h3&gt;
+&lt;p&gt;Rust中的异步编程：https:&#x2F;&#x2F;huangjj27.github.io&#x2F;async-book&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;对于 Async Rust，最最重要的莫过于底层的异步运行时，它提供了执行器、任务调度、异步API等核心服务。简单来说，使用 Rust 提供的 &lt;code&gt;async&#x2F;.await&lt;&#x2F;code&gt; 特性编写的异步代码要运行起来，就必须依赖于异步运行时，否则这些代码将毫无用处。&lt;&#x2F;p&gt;
+&lt;p&gt;异步运行时：&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;tokio&lt;&#x2F;li&gt;
+&lt;li&gt;async-std&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;p&gt;Tokio异步编程: https:&#x2F;&#x2F;github.com&#x2F;sunface&#x2F;tokio-course&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;web&quot;&gt;web&lt;&#x2F;h2&gt;
+&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;flosse&#x2F;rust-web-framework-comparison&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;qian-duan&quot;&gt;前端&lt;&#x2F;h3&gt;
+&lt;p&gt;yew：https:&#x2F;&#x2F;github.com&#x2F;yewstack&#x2F;yew&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;hou-duan&quot;&gt;后端&lt;&#x2F;h3&gt;
+&lt;p&gt;rocket: https:&#x2F;&#x2F;github.com&#x2F;SergioBenitez&#x2F;rocket&lt;&#x2F;p&gt;
+&lt;p&gt;actix-web: https:&#x2F;&#x2F;github.com&#x2F;actix&#x2F;actix-web&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;ke-hu-duan&quot;&gt;客户端&lt;&#x2F;h3&gt;
+&lt;p&gt;reqwest: https:&#x2F;&#x2F;github.com&#x2F;seanmonstar&#x2F;reqwest&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ying-yong-kai-fa&quot;&gt;应用开发&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;ming-ling-xing&quot;&gt;命令行&lt;&#x2F;h3&gt;
+&lt;p&gt;Command line apps in Rust：&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;rust-cli.github.io&#x2F;book&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;suibianxiedianer.github.io&#x2F;rust-cli-book-zh_CN&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;TUI（terminal user interfaces）：https:&#x2F;&#x2F;github.com&#x2F;fdehau&#x2F;tui-rs&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;gui&quot;&gt;GUI&lt;&#x2F;h3&gt;
+&lt;p&gt;Iced：https:&#x2F;&#x2F;github.com&#x2F;iced-rs&#x2F;iced&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;ebpf&quot;&gt;ebpf&lt;&#x2F;h2&gt;
+&lt;p&gt;aya：https:&#x2F;&#x2F;github.com&#x2F;aya-rs&#x2F;aya&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;aya-rs&#x2F;awesome-aya&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;aya-rs&#x2F;book&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;faq&quot;&gt;FAQ&lt;&#x2F;h2&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>在安卓中调用 rust 动态库</title>
+        <published>2022-08-28T00:00:00+00:00</published>
+        <updated>2022-08-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/rust/rust-on-android/"/>
+        <id>https://kscr-rust.github.io/rust/rust-on-android/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/rust/rust-on-android/">&lt;h2 id=&quot;xiang-mu-jie-shao&quot;&gt;项目介绍&lt;&#x2F;h2&gt;
+&lt;p&gt;项目链接：https:&#x2F;&#x2F;github.com&#x2F;martinwairegi&#x2F;rustonandroid&lt;&#x2F;p&gt;
+&lt;p&gt;文件结构：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;├──&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; android          &lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; 安卓相关代码&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;├──&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; rust	     &lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; rust 相关代码，调用 libgmp 库实现功能&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;├──&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; build-all.sh     &lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; 全局构建脚本&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;├──&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; build-apk.sh     &lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; 安卓 apk 编译构建脚本&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;├──&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; build-librpn.sh  &lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; rust 动态库构建脚本&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;└──&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; build-libgmp.sh  &lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; libgmp 构建脚本&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;***注意：***此项目代码使用 NDK-r23+ 无法编译成功，需要打补丁（见文末）。&lt;&#x2F;p&gt;
+&lt;p&gt;主要因为以下两个原因：&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;NDK r23 之后 rust 编译报错 &lt;code&gt;ld: error: unable to find library -lgcc&lt;&#x2F;code&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;解决方法见：https:&#x2F;&#x2F;github.com&#x2F;rust-lang&#x2F;rust&#x2F;pull&#x2F;85806#issuecomment-1096266946&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;项目编码错误&lt;&#x2F;p&gt;
+&lt;p&gt;类名、函数名错误；编译脚本宏路径、名称错误。&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;项目构建：&lt;&#x2F;p&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; export ANDROID_SDK_ROOT=&#x2F;opt&#x2F;Android&#x2F;Sdk&#x2F;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; export ANDROID_NDK_ROOT=&#x2F;opt&#x2F;Android&#x2F;Sdk&#x2F;ndk&#x2F;23.1.7779620&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; export ANDROID_API=29&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; .&#x2F;build-all.sh&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;zhi-shi-tuo-zhan&quot;&gt;知识拓展&lt;&#x2F;h2&gt;
+&lt;p&gt;rust 库编译可以使用 cargo-ndk 工具。&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;bbqsrc&#x2F;cargo-ndk&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;bu-ding&quot;&gt;补丁&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;diff&quot; class=&quot;language-diff z-code&quot;&gt;&lt;code class=&quot;language-diff&quot; data-lang=&quot;diff&quot;&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-header z-from-file&quot;&gt;&lt;span class=&quot;z-meta z-header z-from-file z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-from-file z-diff&quot;&gt;---&lt;&#x2F;span&gt; a&#x2F;build-libgmp.sh
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-header z-to-file&quot;&gt;&lt;span class=&quot;z-meta z-header z-to-file z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-to-file z-diff&quot;&gt;+++&lt;&#x2F;span&gt; b&#x2F;build-libgmp.sh
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-range z-unified&quot;&gt;&lt;span class=&quot;z-meta z-range z-unified z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-toc-list z-line-number z-diff&quot;&gt;-86,34 +86,34&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-entity z-name z-section z-diff&quot;&gt;fi&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; # If the build directory does not exist, create it.
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; if [[ ! -d &amp;quot;${TARGET_DIR}&amp;quot; ]]; then
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	# If we don&amp;#39;t have a local copy of the libgmp archive, download it.
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;	if [[ ! -f &amp;quot;${BUILD_DIR}&#x2F;gmp-${VERSION}.tar.lz&amp;quot; ]]; then
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;	if [[ ! -f &amp;quot;${BUILD_DIR}&#x2F;gmp-${VERSION}.tar.xz&amp;quot; ]]; then
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 		cd &amp;quot;${BUILD_DIR}&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;		curl --remote-name &amp;quot;https:&#x2F;&#x2F;gmplib.org&#x2F;download&#x2F;gmp&#x2F;gmp-${VERSION}.tar.lz&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;		curl --remote-name &amp;quot;https:&#x2F;&#x2F;gmplib.org&#x2F;download&#x2F;gmp&#x2F;gmp-${VERSION}.tar.xz&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	fi
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	# Extract the libgmp archive.
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	mkdir -p &amp;quot;${BUILD_DIR}&#x2F;${ARCH}&#x2F;${BUILD_MODE}&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	cd &amp;quot;${BUILD_DIR}&#x2F;${ARCH}&#x2F;${BUILD_MODE}&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;	tar lxf &amp;quot;${BUILD_DIR}&#x2F;gmp-${VERSION}.tar.lz&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;	tar xf &amp;quot;${BUILD_DIR}&#x2F;gmp-${VERSION}.tar.xz&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; fi
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; # Set up the NDK tools for cross-compiling.
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; TOOLCHAIN=&amp;quot;${ANDROID_NDK_ROOT}&#x2F;toolchains&#x2F;llvm&#x2F;prebuilt&#x2F;linux-x86_64&#x2F;&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; if [[ &amp;quot;${ARCH}&amp;quot; == &amp;quot;armv7&amp;quot; ]]; then
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	HOST=&amp;quot;armv7a-linux-androideabi&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;	TOOL_PREFIX=&amp;quot;${TOOLCHAIN}&#x2F;bin&#x2F;arm-linux-androideabi&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;	TOOL_PREFIX=&amp;quot;${TOOLCHAIN}&#x2F;bin&#x2F;&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; else
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	HOST=&amp;quot;${ARCH}-linux-android&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;	TOOL_PREFIX=&amp;quot;${TOOLCHAIN}&#x2F;bin&#x2F;${HOST}&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;	TOOL_PREFIX=&amp;quot;${TOOLCHAIN}&#x2F;bin&#x2F;&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; fi
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; COMPILER_PREFIX=&amp;quot;${TOOLCHAIN}&#x2F;bin&#x2F;${HOST}${ANDROID_API}&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;export AR=&amp;quot;${TOOL_PREFIX}-ar&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;export AS=&amp;quot;${TOOL_PREFIX}-as&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;export AR=&amp;quot;${TOOL_PREFIX}llvm-ar&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;export AS=&amp;quot;${TOOL_PREFIX}llvm-as&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; export CC=&amp;quot;${COMPILER_PREFIX}-clang&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;export LD=&amp;quot;${TOOL_PREFIX}-ld&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;export RANLIB=&amp;quot;${TOOL_PREFIX}-ranlib&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;export STRIP=&amp;quot;${TOOL_PREFIX}-strip&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;export LD=&amp;quot;${TOOL_PREFIX}ld&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;export RANLIB=&amp;quot;${TOOL_PREFIX}llvm-ranlib&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;export STRIP=&amp;quot;${TOOL_PREFIX}llvm-strip&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; # Set up compiler flags.
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; if [[ &amp;quot;${BUILD_MODE}&amp;quot; == &amp;quot;release&amp;quot; ]]; then
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;diff --git a&#x2F;build-librpn.sh b&#x2F;build-librpn.sh
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;old mode 100644
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;new mode 100755
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;index a4730a4..509ba9a
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-header z-from-file&quot;&gt;&lt;span class=&quot;z-meta z-header z-from-file z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-from-file z-diff&quot;&gt;---&lt;&#x2F;span&gt; a&#x2F;build-librpn.sh
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-header z-to-file&quot;&gt;&lt;span class=&quot;z-meta z-header z-to-file z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-to-file z-diff&quot;&gt;+++&lt;&#x2F;span&gt; b&#x2F;build-librpn.sh
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-range z-unified&quot;&gt;&lt;span class=&quot;z-meta z-range z-unified z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-toc-list z-line-number z-diff&quot;&gt;-88,12 +88,12&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-entity z-name z-section z-diff&quot;&gt;cd &amp;quot;$(dirname &amp;quot;${BASH_SOURCE[0]}&amp;quot;)&#x2F;rust&#x2F;&amp;quot;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; TOOLCHAIN=&amp;quot;${ANDROID_NDK_ROOT}&#x2F;toolchains&#x2F;llvm&#x2F;prebuilt&#x2F;linux-x86_64&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; if [[ &amp;quot;${ARCH}&amp;quot; == &amp;quot;armv7&amp;quot; ]]; then
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	HOST=&amp;quot;armv7a-linux-androideabi&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;	TOOL_PREFIX=&amp;quot;${TOOLCHAIN}&#x2F;bin&#x2F;arm-linux-androideabi&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;	TOOL_PREFIX=&amp;quot;${TOOLCHAIN}&#x2F;bin&#x2F;&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	RUST_TARGET=&amp;quot;armv7-linux-androideabi&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; else
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	HOST=&amp;quot;${ARCH}-linux-android&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;	TOOL_PREFIX=&amp;quot;${TOOLCHAIN}&#x2F;bin&#x2F;${HOST}&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;	TOOL_PREFIX=&amp;quot;${TOOLCHAIN}&#x2F;bin&#x2F;&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	RUST_TARGET=&amp;quot;${ARCH}-linux-android&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; fi
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-range z-unified&quot;&gt;&lt;span class=&quot;z-meta z-range z-unified z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-toc-list z-line-number z-diff&quot;&gt;-111,7 +111,7&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-entity z-name z-section z-diff&quot;&gt;fi&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; #
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; # The RUSTFLAGS variable sets up the linking path (tells rustc where to look for dependencies).
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; env \
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;	&amp;quot;AR_${RUST_TARGET}=${TOOL_PREFIX}-ar&amp;quot; \
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;	&amp;quot;AR_${RUST_TARGET}=${TOOL_PREFIX}llvm-ar&amp;quot; \
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	&amp;quot;CC_${RUST_TARGET}=${COMPILER_PREFIX}-clang&amp;quot; \
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	&amp;quot;CARGO_TARGET_${RUST_TARGET_CAPS}_LINKER=${COMPILER_PREFIX}-clang&amp;quot; \
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	&amp;quot;RUSTFLAGS=-L ${LIBS_DIR}&amp;quot; \
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;diff --git a&#x2F;build&#x2F;libgmp&#x2F;gmp-6.2.1.tar.lz b&#x2F;build&#x2F;libgmp&#x2F;gmp-6.2.1.tar.lz
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;deleted file mode 100644
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;index f02b412..0000000
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;Binary files a&#x2F;build&#x2F;libgmp&#x2F;gmp-6.2.1.tar.lz and &#x2F;dev&#x2F;null differ
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;diff --git a&#x2F;rust&#x2F;src&#x2F;android.rs b&#x2F;rust&#x2F;src&#x2F;android.rs
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;index 68d3883..a08efd0 100644
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-header z-from-file&quot;&gt;&lt;span class=&quot;z-meta z-header z-from-file z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-from-file z-diff&quot;&gt;---&lt;&#x2F;span&gt; a&#x2F;rust&#x2F;src&#x2F;android.rs
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-header z-to-file&quot;&gt;&lt;span class=&quot;z-meta z-header z-to-file z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-to-file z-diff&quot;&gt;+++&lt;&#x2F;span&gt; b&#x2F;rust&#x2F;src&#x2F;android.rs
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-range z-unified&quot;&gt;&lt;span class=&quot;z-meta z-range z-unified z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-toc-list z-line-number z-diff&quot;&gt;-54,7 +54,7&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-entity z-name z-section z-diff&quot;&gt;where&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	 * and hope for the best.
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	 *&#x2F;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	let class = env
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;		.find_class(&amp;quot;pl&#x2F;svgames&#x2F;blog&#x2F;RustOnAndroid&#x2F;Result&amp;quot;)
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;		.find_class(&amp;quot;pl&#x2F;martin&#x2F;blog&#x2F;RustOnAndroid&#x2F;Result&amp;quot;)
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 		.unwrap();
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	let args: [JValue&amp;lt;&amp;#39;e&amp;gt;; 2] = [
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 		JValue::Bool(u8::from(is_ok)),
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-meta z-diff z-range z-unified&quot;&gt;&lt;span class=&quot;z-meta z-range z-unified z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-toc-list z-line-number z-diff&quot;&gt;-71,7 +71,7&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-definition z-range z-diff&quot;&gt;@@&lt;&#x2F;span&gt; &lt;span class=&quot;z-entity z-name z-section z-diff&quot;&gt;fn rpn_wrapper(env: &amp;amp;JNIEnv, expression: JString) -&amp;gt; Result&amp;lt;BigNum&amp;gt; {&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; }
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; #[no_mangle]
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-deleted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-deleted z-diff&quot;&gt;-&lt;&#x2F;span&gt;pub extern &amp;quot;system&amp;quot; fn Java_pl_svgames_blog_RustOnAndroid_RpnCalculator_rpn&amp;lt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt;&lt;span class=&quot;z-markup z-inserted z-diff&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-inserted z-diff&quot;&gt;+&lt;&#x2F;span&gt;pub extern &amp;quot;system&amp;quot; fn Java_pl_martin_blog_RustOnAndroid_RpnCalculator_rpn&amp;lt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	&amp;#39;e,
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; &amp;gt;(
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-diff&quot;&gt; 	env: JNIEnv&amp;lt;&amp;#39;e&amp;gt;,
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>tmux nvim 真彩色设置</title>
+        <published>2022-08-28T00:00:00+00:00</published>
+        <updated>2022-08-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/tmux-nvim-true-color/"/>
+        <id>https://kscr-rust.github.io/tmux-nvim-true-color/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/tmux-nvim-true-color/">&lt;p&gt;https:&#x2F;&#x2F;jdhao.github.io&#x2F;2018&#x2F;10&#x2F;19&#x2F;tmux_nvim_true_color&#x2F;&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;neovim-she-zhi&quot;&gt;Neovim 设置&lt;&#x2F;h2&gt;
+&lt;p&gt;Neovim has good support for true colors. According to &lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;neovim&#x2F;neovim&#x2F;wiki&#x2F;FAQ#how-can-i-use-true-color-in-the-terminal&quot;&gt;official doc&lt;&#x2F;a&gt;, to enable true color support, you need to add the following setting to &lt;code&gt;init.vim&lt;&#x2F;code&gt;:&lt;&#x2F;p&gt;
+&lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;set termguicolors
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;tmux-she-zhi&quot;&gt;Tmux 设置&lt;&#x2F;h2&gt;
+&lt;pre class=&quot;z-code&quot;&gt;&lt;code&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;set -g default-terminal &amp;quot;screen-256color&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;# tell Tmux that outside terminal supports true color
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;set -ga terminal-overrides &amp;quot;,xterm-256color*:Tc&amp;quot;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;# for tmux 3.2, you can use the following setting instead:
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-text z-plain&quot;&gt;# set -as terminal-features &amp;quot;,xterm-256color:RGB&amp;quot;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;yan-zheng&quot;&gt;验证&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;nvim-checkhealth&quot;&gt;nvim checkhealth&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; nvim&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;:checkhealth&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h3 id=&quot;zhong-duan-da-yin-se-dai&quot;&gt;终端打印色带&lt;&#x2F;h3&gt;
+&lt;pre data-lang=&quot;bash&quot; class=&quot;language-bash z-code&quot;&gt;&lt;code class=&quot;language-bash&quot; data-lang=&quot;bash&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;awk&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;BEGIN{
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;    s=&amp;quot;&#x2F;\\&#x2F;\\&#x2F;\\&#x2F;\\&#x2F;\\&amp;quot;; s=s s s s s s s s;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;    for (colnum = 0; colnum&amp;lt;77; colnum++) {
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;        r = 255-(colnum*255&#x2F;76);
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;        g = (colnum*510&#x2F;76);
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;        b = (colnum*255&#x2F;76);
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;        if (g&amp;gt;255) g = 510-g;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;        printf &amp;quot;\033[48;2;%d;%d;%dm&amp;quot;, r,g,b;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;        printf &amp;quot;\033[38;2;%d;%d;%dm&amp;quot;, 255-r,255-g,255-b;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;        printf &amp;quot;%s\033[0m&amp;quot;, substr(s,colnum+1,1);
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;    }
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;    printf &amp;quot;\n&amp;quot;;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;}&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;p&gt;未开启真彩色：&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;kscr-rust.github.io&#x2F;tmux-nvim-true-color&#x2F;20181023012639.png&quot; alt=&quot;without true color&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;开启真彩色：&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;https:&#x2F;&#x2F;kscr-rust.github.io&#x2F;tmux-nvim-true-color&#x2F;20181020165808.png&quot; alt=&quot;with true color&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Zola: A fast static site generator in a single binary with everything built-in.</title>
+        <published>2022-08-28T00:00:00+00:00</published>
+        <updated>2022-08-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/zola/"/>
+        <id>https://kscr-rust.github.io/zola/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/zola/">&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;getzola&#x2F;zola&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;caiye.one&#x2F;zola-quick-start&#x2F;&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;www.getzola.org&#x2F;documentation&#x2F;getting-started&#x2F;overview&#x2F;&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>ZSH：THE Z SHELL</title>
+        <published>2022-08-28T00:00:00+00:00</published>
+        <updated>2022-08-28T00:00:00+00:00</updated>
+        
+        <author>
+          <name>
+            
+              Unknown
+            
+          </name>
+        </author>
+        
+        <link rel="alternate" type="text/html" href="https://kscr-rust.github.io/zsh/"/>
+        <id>https://kscr-rust.github.io/zsh/</id>
+        
+        <content type="html" xml:base="https://kscr-rust.github.io/zsh/">&lt;h2 id=&quot;pei-zhi&quot;&gt;配置&lt;&#x2F;h2&gt;
+&lt;pre data-lang=&quot;zsh&quot; class=&quot;language-zsh z-code&quot;&gt;&lt;code class=&quot;language-zsh&quot; data-lang=&quot;zsh&quot;&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Enable Powerlevel10k instant prompt. Should stay close to the top of ~&#x2F;.zshrc.&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Initialization code that may require console input (password prompts, [y&#x2F;n]&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; confirmations, etc.) must go above this block; everything else may go below.&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-keyword z-control z-conditional z-if z-shell&quot;&gt;if&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-support z-function z-double-brace z-begin z-shell&quot;&gt;[[&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt;-&lt;&#x2F;span&gt;r&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-parameter z-begin z-shell&quot;&gt;{&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;XDG_CACHE_HOME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-shell&quot;&gt;:-&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;HOME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;.cache&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-parameter z-end z-shell&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;p10k-instant-prompt-&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-parameter z-begin z-shell&quot;&gt;{&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;(&lt;span class=&quot;z-keyword z-operator z-expansion z-shell&quot;&gt;%&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;):-%n&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-parameter z-end z-shell&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;.zsh&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-support z-function z-double-brace z-end z-shell&quot;&gt;]]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-logical z-continue z-shell&quot;&gt;;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-control z-conditional z-then z-shell&quot;&gt;then&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;  &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-support z-function z-source z-shell&quot;&gt;source&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-parameter z-begin z-shell&quot;&gt;{&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;XDG_CACHE_HOME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-shell&quot;&gt;:-&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;HOME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;.cache&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-parameter z-end z-shell&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;p10k-instant-prompt-&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-parameter z-begin z-shell&quot;&gt;{&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;(&lt;span class=&quot;z-keyword z-operator z-expansion z-shell&quot;&gt;%&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;):-%n&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-parameter z-end z-shell&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;.zsh&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-keyword z-control z-conditional z-end z-shell&quot;&gt;fi&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Compilation flags&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; export ARCHFLAGS=&amp;quot;-arch x86_64&amp;quot;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-storage z-modifier z-shell&quot;&gt;export&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-assignment z-shell&quot;&gt;PATH&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-shell&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-unquoted z-shell&quot;&gt;&#x2F;opt&#x2F;toolchains&#x2F;gcc-linaro-12.0.1-2022.02-x86_64_aarch64-linux-gnu&#x2F;bin:&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;PATH&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-storage z-modifier z-shell&quot;&gt;export&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-assignment z-shell&quot;&gt;PATH&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-shell&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-unquoted z-shell&quot;&gt;&#x2F;opt&#x2F;toolchains&#x2F;mips-loongson-gcc8-linux-gnu-2021-02-08&#x2F;bin:&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;PATH&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-storage z-modifier z-shell&quot;&gt;export&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-assignment z-shell&quot;&gt;PATH&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-shell&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-unquoted z-shell&quot;&gt;&#x2F;opt&#x2F;node-v14.17.3-linux-x64&#x2F;bin:&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;PATH&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-storage z-modifier z-shell&quot;&gt;export&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-assignment z-shell&quot;&gt;PATH&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-shell&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-unquoted z-shell&quot;&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;HOME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;.bin:&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;PATH&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-storage z-modifier z-shell&quot;&gt;export&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-assignment z-shell&quot;&gt;PATH&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-shell&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-unquoted z-shell&quot;&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;HOME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;.bin&#x2F;latexindent.pl-3.12:&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;PATH&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;export PATH=&#x2F;usr&#x2F;local&#x2F;texlive&#x2F;2022&#x2F;bin&#x2F;x86_64-linux:$PATH&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;export PATH=$PATH:$HOME&#x2F;.platformio&#x2F;penv&#x2F;bin&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-assignment z-shell&quot;&gt;DEBFULLNAME&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-shell&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-unquoted z-shell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;Ke Sun&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-assignment z-shell&quot;&gt;DEBEMAIL&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-shell&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-unquoted z-shell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;sunke@kylinos.cn&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-storage z-modifier z-shell&quot;&gt;export&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-assignment z-shell&quot;&gt;DEBEMAIL&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-assignment z-shell&quot;&gt;DEBFULLNAME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-storage z-modifier z-shell&quot;&gt;export&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-assignment z-shell&quot;&gt;EDITOR&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-shell&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-unquoted z-shell&quot;&gt;&lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;vim&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-storage z-modifier z-shell&quot;&gt;export&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-assignment z-shell&quot;&gt;XDG_CONFIG_HOME&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-shell&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-unquoted z-shell&quot;&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;HOME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;.config&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Use ESC to edit the current command line:&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; https:&#x2F;&#x2F;bugfactory.io&#x2F;blog&#x2F;z-shell-tip-edit-current-command-line-with-vim&#x2F;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;autoload&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;U&lt;&#x2F;span&gt; edit-command-line&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;zle&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;N&lt;&#x2F;span&gt; edit-command-line&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;bindkey&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;\033&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; edit-command-line&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Font:&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; https:&#x2F;&#x2F;github.com&#x2F;JetBrains&#x2F;JetBrainsMono&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; &#x2F;bin&#x2F;bash -c &amp;quot;$(curl -fsSL https:&#x2F;&#x2F;raw.githubusercontent.com&#x2F;JetBrains&#x2F;JetBrainsMono&#x2F;master&#x2F;install_manual.sh)&amp;quot;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; .zshrc reference to:&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; https:&#x2F;&#x2F;github.com&#x2F;lmintmate&#x2F;zshrc&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; https:&#x2F;&#x2F;github.com&#x2F;ricbra&#x2F;zsh-config&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Setting for menu selection in completion&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;zstyle&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;:completion:*&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; menu select&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; List the completion matches in rows instead of columns&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;setopt&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; list_rows_first&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Show a menu for completion instead of putting all the&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; filenames that satisfy the conditions of the glob on the command&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;setopt&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; glob_complete&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Enable LS_COLORS for the completion of files and directories&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;zstyle&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;:completion:*&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; list-colors &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-parameter z-begin z-shell&quot;&gt;{&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;(s.&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-keyword z-operator z-substring z-begin z-shell&quot;&gt;:&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;.)LS_COLORS&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-parameter z-end z-shell&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Append commands to the history file as soon as they are executed.&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;setopt&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; inc_append_history&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Don’t add a duplicate of the previous command into history.&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;setopt&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; histignoredups&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Try to correct the spelling of commands&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;setopt&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; correct&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; https:&#x2F;&#x2F;github.com&#x2F;robbyrussell&#x2F;oh-my-zsh&#x2F;issues&#x2F;449&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;setopt&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; no_nomatch&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Set personal aliases, overriding those provided by oh-my-zsh libs,&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; plugins, and themes. Aliases can be placed here, though oh-my-zsh&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; users are encouraged to define aliases within the ZSH_CUSTOM folder.&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; For a full list of active aliases, run `alias`.&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Example aliases&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; alias zshconfig=&amp;quot;mate ~&#x2F;.zshrc&amp;quot;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; alias ohmyzsh=&amp;quot;mate ~&#x2F;.oh-my-zsh&amp;quot;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;## Added by Zinit&amp;#39;s installer&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-keyword z-control z-conditional z-if z-shell&quot;&gt;if&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-support z-function z-double-brace z-begin z-shell&quot;&gt;[[&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-shell&quot;&gt;!&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt;-&lt;&#x2F;span&gt;f&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;HOME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;.local&#x2F;share&#x2F;zinit&#x2F;zinit.git&#x2F;zinit.zsh &lt;span class=&quot;z-support z-function z-double-brace z-end z-shell&quot;&gt;]]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-logical z-continue z-shell&quot;&gt;;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-control z-conditional z-then z-shell&quot;&gt;then&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;    &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;print&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;P&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum&#x2F;zinit%F{220})…%f&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;    &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-support z-function z-command z-shell&quot;&gt;command&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; mkdir &lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt;-&lt;&#x2F;span&gt;p&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;HOME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;.local&#x2F;share&#x2F;zinit&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-and z-shell&quot;&gt;&amp;amp;&amp;amp;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-support z-function z-command z-shell&quot;&gt;command&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; chmod g-rwX &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;HOME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;.local&#x2F;share&#x2F;zinit&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;    &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-support z-function z-command z-shell&quot;&gt;command&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; git clone https:&#x2F;&#x2F;github.com&#x2F;zdharma-continuum&#x2F;zinit &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;HOME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;.local&#x2F;share&#x2F;zinit&#x2F;zinit.git&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-and z-shell&quot;&gt;&amp;amp;&amp;amp;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;        &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;print&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;P&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;%F{33} %F{34}Installation successful.%f%b&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-or z-shell&quot;&gt;||&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;        &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;print&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;P&lt;&#x2F;span&gt; &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;%F{160} The clone has failed.%f%b&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-keyword z-control z-conditional z-end z-shell&quot;&gt;fi&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-support z-function z-source z-shell&quot;&gt;source&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-variable z-other z-readwrite z-shell&quot;&gt;HOME&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;.local&#x2F;share&#x2F;zinit&#x2F;zinit.git&#x2F;zinit.zsh&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;autoload&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; -&lt;&#x2F;span&gt;Uz&lt;&#x2F;span&gt; _zinit&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-group z-arithmetic z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-arithmetic z-begin z-shell&quot;&gt;((&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-parameter z-begin z-shell&quot;&gt;{&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-shell&quot;&gt;+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;_comps&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-group z-expansion z-parameter z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-section z-expansion z-parameter z-end z-shell&quot;&gt;}&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-section z-arithmetic z-end z-shell&quot;&gt;))&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-logical z-and z-shell&quot;&gt;&amp;amp;&amp;amp;&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-other z-readwrite z-assignment z-shell&quot;&gt;_comps&lt;span class=&quot;z-punctuation z-section z-braces z-begin z-shell&quot;&gt;[&lt;&#x2F;span&gt;zinit&lt;span class=&quot;z-punctuation z-section z-braces z-end z-shell&quot;&gt;]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-keyword z-operator z-assignment z-shell&quot;&gt;=&lt;&#x2F;span&gt;&lt;span class=&quot;z-string z-unquoted z-shell&quot;&gt;_zinit&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;## End of Zinit&amp;#39;s installer chunk&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Load powerlevel10k theme&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;zinit&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; ice depth&lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;1&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; git clone depth&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;zinit&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; light romkatv&#x2F;powerlevel10k&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Load pure theme&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;zinit ice pick&amp;quot;async.zsh&amp;quot; src&amp;quot;pure.zsh&amp;quot; # with zsh-async library that&amp;#39;s bundled with it.&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;zinit light sindresorhus&#x2F;pure&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; Load starship theme&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;zinit ice as&amp;quot;command&amp;quot; from&amp;quot;gh-r&amp;quot; \ # `starship` binary as command, from github release&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;          atclone&amp;quot;.&#x2F;starship init zsh &amp;gt; init.zsh; .&#x2F;starship completions zsh &amp;gt; _starship&amp;quot; \ # starship setup at clone(create init.zsh, completion)&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;          atpull&amp;quot;%atclone&amp;quot; src&amp;quot;init.zsh&amp;quot; # pull behavior same as clone, source init.zsh&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;zinit light starship&#x2F;starship&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; A.&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;setopt&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; promptsubst&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; B.&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;zinit&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; wait lucid for &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;        OMZL::git.zsh &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;  atload&lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;unalias grv&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;        OMZP::git&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; C.&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;zinit&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; wait&lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;!&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; lucid for &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;    OMZL::prompt_info_functions.zsh&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;zinit&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; wait lucid atload&lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;zicompinit; zicdreplay&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; blockf for &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;    zsh-users&#x2F;zsh-completions&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; D.&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;zinit&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; wait lucid for &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;      zdharma-continuum&#x2F;fast-syntax-highlighting &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;      OMZP::colored-man-pages &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;  as&lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;completion&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;        OMZP::docker&#x2F;_docker &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;  as&lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;completion&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; is-snippet&lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;        &lt;span class=&quot;z-meta z-group z-expansion z-command z-parens z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-variable z-shell&quot;&gt;$&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-begin z-shell&quot;&gt;(&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;rustc&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt; --&lt;&#x2F;span&gt;print&lt;&#x2F;span&gt; sysroot&lt;&#x2F;span&gt;&lt;span class=&quot;z-punctuation z-section z-parens z-end z-shell&quot;&gt;)&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;share&#x2F;zsh&#x2F;site-functions&#x2F;_cargo &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;  atload&lt;span class=&quot;z-string z-quoted z-double z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;_zsh_autosuggest_start; bindkey &amp;#39;  &amp;#39; autosuggest-accept&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;quot;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;      zsh-users&#x2F;zsh-autosuggestions &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;  blockf atpull&lt;span class=&quot;z-string z-quoted z-single z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-string z-begin z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;zinit creinstall -q .&lt;span class=&quot;z-punctuation z-definition z-string z-end z-shell&quot;&gt;&amp;#39;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;        OMZP::extract &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;	OMZL::history.zsh&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-variable z-function z-shell&quot;&gt;zinit&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; wait lucid for &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;	agkozak&#x2F;zsh-z &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;	zdharma-continuum&#x2F;history-search-multi-word &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;	https:&#x2F;&#x2F;gist.githubusercontent.com&#x2F;hightemp&#x2F;5071909&#x2F;raw&#x2F; &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;	https:&#x2F;&#x2F;github.com&#x2F;ohmyzsh&#x2F;ohmyzsh&#x2F;raw&#x2F;master&#x2F;plugins&#x2F;command-not-found&#x2F;command-not-found.plugin.zsh &lt;span class=&quot;z-punctuation z-separator z-continuation z-line z-shell&quot;&gt;\
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;	amyreese&#x2F;zsh-titles&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;zinit ice proto&amp;quot;https&amp;quot;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;zinit light zinit-zsh&#x2F;z-a-man&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;
+&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-comment z-begin z-shell&quot;&gt;#&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt; To customize prompt, run `p10k configure` or edit ~&#x2F;.p10k.zsh.&lt;&#x2F;span&gt;&lt;span class=&quot;z-comment z-line z-number-sign z-shell&quot;&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-source z-shell z-bash&quot;&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt;&lt;span class=&quot;z-support z-function z-double-brace z-begin z-shell&quot;&gt;[[&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-shell&quot;&gt;!&lt;&#x2F;span&gt; &lt;span class=&quot;z-variable z-parameter z-option z-shell&quot;&gt;&lt;span class=&quot;z-punctuation z-definition z-parameter z-shell&quot;&gt;-&lt;&#x2F;span&gt;f&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-group z-expansion z-tilde&quot;&gt;&lt;span class=&quot;z-variable z-language z-tilde z-shell&quot;&gt;~&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;.p10k.zsh &lt;span class=&quot;z-support z-function z-double-brace z-end z-shell&quot;&gt;]]&lt;&#x2F;span&gt;&lt;&#x2F;span&gt; &lt;span class=&quot;z-keyword z-operator z-logical z-or z-shell&quot;&gt;||&lt;&#x2F;span&gt; &lt;span class=&quot;z-meta z-function-call z-shell&quot;&gt;&lt;span class=&quot;z-support z-function z-source z-shell&quot;&gt;source&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&lt;span class=&quot;z-meta z-function-call z-arguments z-shell&quot;&gt; &lt;span class=&quot;z-meta z-group z-expansion z-tilde&quot;&gt;&lt;span class=&quot;z-variable z-language z-tilde z-shell&quot;&gt;~&lt;&#x2F;span&gt;&lt;&#x2F;span&gt;&#x2F;.p10k.zsh&lt;&#x2F;span&gt;
+&lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
+&lt;h2 id=&quot;cha-jian&quot;&gt;插件&lt;&#x2F;h2&gt;
+&lt;h3 id=&quot;cha-jian-guan-li-qi&quot;&gt;插件管理器&lt;&#x2F;h3&gt;
+&lt;p&gt;https:&#x2F;&#x2F;zdharma-continuum.github.io&#x2F;zinit&#x2F;wiki&#x2F;&lt;&#x2F;p&gt;
+&lt;h3 id=&quot;chang-yong-cha-jian&quot;&gt;常用插件&lt;&#x2F;h3&gt;
+&lt;p&gt;https:&#x2F;&#x2F;project-awesome.org&#x2F;unixorn&#x2F;awesome-zsh-plugins&lt;&#x2F;p&gt;
+&lt;p&gt;https:&#x2F;&#x2F;github.com&#x2F;amyreese&#x2F;zsh-titles&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+</feed>
